@@ -3,6 +3,20 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-02-25
+
+### Added
+- Extensively tested and added tooltip explanations for all MISSABLE tags. These can be viewed when hovered over.
+- Many new missable tags to many steps that I hadn't tested properly due to requiring specific conditions for testing.
+- New optional step added to Varre's questline and the walkthroughs.
+- New note about missable Info item "About Invasion Multiplayer" and how to obtain it.
+- Added Dark Moon Ring as a condition to make Blaidd spawn outside Ranni's Rise.
+- Added a reminder step during the Mountaintops to remind the player to finish Rya's questline once Rykard has been defeated.
+- Updated missables in Yura's questline, made the first step in his questline required, and tagged killing Agheel as optional.
+
+### Changed
+- Rewritten Diallos's step in Liurnia to make it a lot easier to find him in Academy Gate Town.
+
 ## 2026-02-10
 
 ### Breaking Changes!
