@@ -123,6 +123,7 @@
     <div id="filter">
       <button type="button" id="expand-all" class="btn">Expand all</button>
       <button type="button" id="collapse-all" class="btn">Collapse all</button>
+      <button type="button" id="compact-btn" class="btn" aria-pressed="false">Hide info</button>
       <button type="button" id="hide-btn" class="btn flex ac" aria-label="Hide checked steps" aria-pressed="false">
         <svg id="showSvg" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
           <path d="M10 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
@@ -223,9 +224,9 @@
 
       <h3 id="mending-runes"><button type="button" class="collapse-btn btn" aria-label="Toggle Mending Runes" aria-controls="k9" aria-expanded="true"></button>Mending Runes<button type="button" id="k-c9" class="check-all" aria-label="Check all">0/0</button></h3>
       <ul id="k9">
-        <li><label><input type="checkbox" id="k9-1"><strong class="missable" data-tooltip="Goldmask disappears from the game if you burn the Erdtree at the Forge of the Giants before telling him that Radagon is Marika." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Mending_Rune_of_Perfect_Order">Mending Rune of Perfect Order</a>: Looted from Goldmask's corpse at the end of Corhyn's questline.</label></li>
-        <li><label><input type="checkbox" id="k9-2"><strong class="missable" data-tooltip="Unobtainable if you kill Fia after defeating her champions in Deeproot Depths." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Mending_Rune_of_the_Death-Prince">Mending Rune of the Death-Prince</a>: Looted from Fia's corpse at the end of her questline.</label></li>
-        <li><label><input type="checkbox" id="k9-3"><strong class="missable" data-tooltip="Unobtainable if you don't loot the Seedbed Curse in the collapsed-roof building in Leyndell before killing Maliketh and join Volcano Manor before hearing Rya's request." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Mending_Rune_of_the_Fell_Curse">Mending Rune of the Fell Curse</a>: Looted from Dung Eater's corpse at the end of his questline.</label></li>
+        <li><label><input type="checkbox" id="k9-1"><strong class="missable" data-tooltip="Goldmask disappears from the game if you burn the Erdtree at the Forge of the Giants before telling him that Radagon is Marika." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Mending_Rune_of_Perfect_Order">Mending Rune of Perfect Order</a><span class="description">: Looted from Goldmask's corpse at the end of Corhyn's questline.</span></label></li>
+        <li><label><input type="checkbox" id="k9-2"><strong class="missable" data-tooltip="Unobtainable if you kill Fia after defeating her champions in Deeproot Depths." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Mending_Rune_of_the_Death-Prince">Mending Rune of the Death-Prince</a><span class="description">: Looted from Fia's corpse at the end of her questline.</span></label></li>
+        <li><label><input type="checkbox" id="k9-3"><strong class="missable" data-tooltip="Unobtainable if you don't loot the Seedbed Curse in the collapsed-roof building in Leyndell before killing Maliketh and join Volcano Manor before hearing Rya's request." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Mending_Rune_of_the_Fell_Curse">Mending Rune of the Fell Curse</a><span class="description">: Looted from Dung Eater's corpse at the end of his questline.</span></label></li>
       </ul>
 
       <!-- <h3 id="stonesword-keys"><button type="button" class="collapse-btn btn" aria-label="Toggle Stonesword Keys" aria-controls="k10" aria-expanded="true"></button>Stonesword Keys<button type="button" id="k-c10" class="check-all" aria-label="Check all">0/0</button></h3>
@@ -361,7 +362,7 @@
         <li><label><input type="checkbox" id="k14-35"><a href="https://eldenring.wiki.gg/wiki/Antiquity_Scholar%27s_Cookbook_1">Antiquity Scholar's Cookbook [1]</a></label></li>
         <li><label><input type="checkbox" id="k14-36"><a href="https://eldenring.wiki.gg/wiki/Antiquity_Scholar%27s_Cookbook_2">Antiquity Scholar's Cookbook [2]</a></label></li>
         <li><label><input type="checkbox" id="k14-37"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_1">Forager Brood Cookbook [1]</a></label></li>
-        <li><label><input type="checkbox" id="k14-38"><strong class="missable" data-tooltip="Missed if you kill the Forager Brood before interacting with it." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_2">Forager Brood Cookbook [2]</a>: Received from the Forager Brood near Cliffroad Terminus.</label></li>
+        <li><label><input type="checkbox" id="k14-38"><strong class="missable" data-tooltip="Missed if you kill the Forager Brood before interacting with it." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_2">Forager Brood Cookbook [2]</a><span class="description">: Received from the Forager Brood near Cliffroad Terminus.</span></label></li>
         <li><label><input type="checkbox" id="k14-39"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_3">Forager Brood Cookbook [3]</a></label></li>
         <li><label><input type="checkbox" id="k14-40"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_4">Forager Brood Cookbook [4]</a></label></li>
         <li><label><input type="checkbox" id="k14-41"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_5">Forager Brood Cookbook [5]</a></label></li>
@@ -377,7 +378,7 @@
         <li><label><input type="checkbox" id="k15-2"><a href="https://eldenring.wiki.gg/wiki/Iron_Whetblade">Iron Whetblade</a></label></li>
         <li><label><input type="checkbox" id="k15-3"><a href="https://eldenring.wiki.gg/wiki/Glintstone_Whetblade">Glintstone Whetblade</a></label></li>
         <li><label><input type="checkbox" id="k15-4"><a href="https://eldenring.wiki.gg/wiki/Red-Hot_Whetblade">Red-Hot Whetblade</a></label></li>
-        <li><label><input type="checkbox" id="k15-5"><strong class="missable" data-tooltip="Must be picked up before killing Maliketh." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Sanctified_Whetblade">Sanctified Whetblade</a>: Found on the second floor of the Fortified Manor (where Hewg normally is).</label></li>
+        <li><label><input type="checkbox" id="k15-5"><strong class="missable" data-tooltip="Must be picked up before killing Maliketh." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Sanctified_Whetblade">Sanctified Whetblade</a><span class="description">: Found on the second floor of the Fortified Manor (where Hewg normally is).</span></label></li>
         <li><label><input type="checkbox" id="k15-6"><a href="https://eldenring.wiki.gg/wiki/Black_Whetblade">Black Whetblade</a></label></li>
       </ul>
 
