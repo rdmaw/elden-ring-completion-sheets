@@ -137,6 +137,7 @@ strong {
 .collapsed,
 .compact-checklists .missable,
 .compact-checklists .description,
+.compact-checklists .night-boss,
 .hide-checked .checked,
 #hideSvg {
   display: none;
