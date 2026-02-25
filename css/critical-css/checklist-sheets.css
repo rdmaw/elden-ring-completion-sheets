@@ -135,8 +135,11 @@ strong {
 }
 
 .collapsed,
-.hide-checked .checked {
-  display: none !important;
+.compact-checklists .missable,
+.compact-checklists .description,
+.hide-checked .checked,
+#hideSvg {
+  display: none;
 }
 
 /* COMPONENTS
@@ -286,10 +289,6 @@ h2 span {
 #showSvg {
   width: 1.5rem;
   height: 1.5rem;
-}
-
-#hideSvg {
-  display: none;
 }
 
 .btn {
