@@ -1,6 +1,5 @@
 /* PROFILE AND STORAGE
 ---------------------- */
-const key = 'er'; // To be removed
 const PROFILES_KEY = 'eldenring-profiles';
 const DEFAULT_PROFILE = 'default';
 const PROFILE_TEMPLATE = { [DEFAULT_PROFILE]: { checked: {}, collapsed: {} } };
@@ -17,44 +16,6 @@ function ensureProfileExists() {
         profiles[activeProfile] = { checked: {}, collapsed: {} };
     }
 }
-
-// To be removed
-cleanLocalStorage();
-
-function cleanLocalStorage() {
-    const oldData = localStorage.getItem(key);
-
-    if (oldData && !localStorage.getItem(PROFILES_KEY)) {
-        localStorage.setItem(PROFILES_KEY, oldData);
-    }
-
-    localStorage.removeItem(key)
-    localStorage.removeItem('cb');
-    localStorage.removeItem('t');
-    localStorage.removeItem('h');
-    localStorage.removeItem('current');
-
-    for (const name in profiles) {
-        const p = profiles[name];
-        if (!p.checked) p.checked = {};
-        if (!p.collapsed) p.collapsed = {};
-
-        if (p.data) {
-            for (const k in p.data) {
-                if (!p.checked[k]) p.checked[k] = p.data[k];
-            }
-            delete p.data;
-        }
-        if (p.col) {
-            for (const k in p.col) {
-                if (!p.collapsed[k]) p.collapsed[k] = p.col[k];
-            }
-            delete p.col;
-        }
-    }
-    localStorage.setItem(PROFILES_KEY, JSON.stringify(profiles));
-}
-// End of: To be removed
 
 function loadProfiles() {
     try {
