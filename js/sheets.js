@@ -810,6 +810,32 @@ if (expandAllBtn) {
     });
 }
 
+/* COMPACT CHECKLISTS
+--------------------- */
+const compactBtn = document.getElementById('compact-btn');
+
+function updateCompactUI(isCompact) {
+    root.classList.toggle('compact-checklists', isCompact);
+
+    if (compactBtn) {
+        compactBtn.ariaPressed = String(isCompact);
+        compactBtn.textContent = isCompact ? 'Show info' : 'Hide info';
+    }
+}
+
+if (compactBtn) {
+    const isCompact = root.classList.contains('compact-checklists');
+
+    updateCompactUI(isCompact);
+
+    compactBtn.addEventListener('click', () => {
+        const isCompact = !root.classList.contains('compact-checklists');
+
+        updateCompactUI(isCompact);
+        localStorage.setItem('compact-checklists', String(isCompact));
+    });
+}
+
 /* HIDE CHECKED STEPS
 --------------------- */
 const hideBtn = document.getElementById('hide-btn');
@@ -823,9 +849,9 @@ if (hideBtn) {
         const isHidden = !root.classList.contains('hide-checked');
 
         root.classList.toggle('hide-checked', isHidden);
-        hideBtn.ariaPressed = isHidden ? 'true' : 'false';
+        hideBtn.ariaPressed = String(isHidden);
 
-        localStorage.setItem('hide-checked', isHidden ? 'true' : 'false');
+        localStorage.setItem('hide-checked', String(isHidden));
     });
 }
 
@@ -1112,13 +1138,19 @@ window.addEventListener('storage', event => {
         return;
     }
 
+    if (event.key === 'compact-checklists') {
+        updateCompactUI(event.newValue === 'true');
+
+        return;
+    }
+
     if (event.key === 'hide-checked') {
         const isHidden = event.newValue === 'true';
 
         root.classList.toggle('hide-checked', isHidden);
 
         if (hideBtn) {
-            hideBtn.ariaPressed = isHidden ? 'true' : 'false';
+            hideBtn.ariaPressed = String(isHidden);
         }
 
         return;
@@ -1220,5 +1252,9 @@ window.addEventListener('pageshow', event => {
 
     if (expandAllBtn) {
         setupCollapseUI();
+    }
+
+    if (compactBtn) {
+        updateCompactUI(localStorage.getItem('compact-checklists') === 'true');
     }
 });
