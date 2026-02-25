@@ -114,6 +114,7 @@
     <div id="filter">
       <button type="button" id="expand-all" class="btn">Expand all</button>
       <button type="button" id="collapse-all" class="btn">Collapse all</button>
+      <button type="button" id="compact-btn" class="btn" aria-pressed="false">Hide info</button>
       <button type="button" id="hide-btn" class="btn flex ac" aria-label="Hide checked steps" aria-pressed="false">
         <svg id="showSvg" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
           <path d="M10 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
@@ -150,7 +151,7 @@
         <li><label><input type="checkbox" id="t1-19"><a href="https://eldenring.wiki.gg/wiki/Viridian_Amber_Medallion_%2B3">Viridian Amber Medallion +3</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
         <li><label><input type="checkbox" id="t1-20"><a href="https://eldenring.wiki.gg/wiki/Green_Turtle_Talisman">Green Turtle Talisman</a></label></li>
         <li><label><input type="checkbox" id="t1-21"><a href="https://eldenring.wiki.gg/wiki/Two-Headed_Turtle_Talisman">Two-Headed Turtle Talisman</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
-        <li><label><input type="checkbox" id="t1-22"><strong class="missable" data-tooltip="To receive the Arsenal Charm from Nepheli in Roundtable Hold, you must exhaust her dialogue in Stormveil Castle before killing Godrick." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Arsenal_Charm">Arsenal Charm</a>: Received from Nepheli in Roundtable Hold after killing Godrick.</label></li>
+        <li><label><input type="checkbox" id="t1-22"><strong class="missable" data-tooltip="To receive the Arsenal Charm from Nepheli in Roundtable Hold, you must exhaust her dialogue in Stormveil Castle before killing Godrick." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Arsenal_Charm">Arsenal Charm</a><span class="description">: Received from Nepheli in Roundtable Hold after killing Godrick.</span></label></li>
         <li><label><input type="checkbox" id="t1-23"><a href="https://eldenring.wiki.gg/wiki/Arsenal_Charm_%2B1">Arsenal Charm +1</a></label></li>
         <li><label><input type="checkbox" id="t1-24"><a href="https://eldenring.wiki.gg/wiki/Great-Jar%27s_Arsenal">Great-Jar's Arsenal</a></label></li>
         <li><label><input type="checkbox" id="t1-25"><a href="https://eldenring.wiki.gg/wiki/Erdtree%27s_Favor">Erdtree's Favor</a></label></li>
@@ -216,7 +217,7 @@
         <li><label><input type="checkbox" id="t3-2"><a href="https://eldenring.wiki.gg/wiki/Curved_Sword_Talisman">Curved Sword Talisman</a></label></li>
         <li><label><input type="checkbox" id="t3-3"><a href="https://eldenring.wiki.gg/wiki/Twinblade_Talisman">Twinblade Talisman</a></label></li>
         <li><label><input type="checkbox" id="t3-4"><a href="https://eldenring.wiki.gg/wiki/Axe_Talisman">Axe Talisman</a></label></li>
-        <li><label><input type="checkbox" id="t3-5"><strong class="missable" data-tooltip="Becomes unobtainable after joining the Volcano Manor." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Hammer_Talisman">Hammer Talisman</a>: Guaranteed drop from defeating Recusant Henricus's invasion near Limgrave Colosseum.</label></li>
+        <li><label><input type="checkbox" id="t3-5"><strong class="missable" data-tooltip="Becomes unobtainable after joining the Volcano Manor." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Hammer_Talisman">Hammer Talisman</a><span class="description">: Guaranteed drop from defeating Recusant Henricus's invasion near Limgrave Colosseum.</span></label></li>
         <li><label><input type="checkbox" id="t3-6"><a href="https://eldenring.wiki.gg/wiki/Spear_Talisman">Spear Talisman</a></label></li>
         <li><label><input type="checkbox" id="t3-7"><a href="https://eldenring.wiki.gg/wiki/Lance_Talisman">Lance Talisman</a></label></li>
         <li><label><input type="checkbox" id="t3-8"><a href="https://eldenring.wiki.gg/wiki/Claw_Talisman">Claw Talisman</a></label></li>
@@ -237,7 +238,7 @@
         <li><label><input type="checkbox" id="t4-2"><a href="https://eldenring.wiki.gg/wiki/Graven-Mass_Talisman">Graven-Mass Talisman</a></label></li>
         <li><label><input type="checkbox" id="t4-3"><a href="https://eldenring.wiki.gg/wiki/Faithful%27s_Canvas_Talisman">Faithful's Canvas Talisman</a></label></li>
         <li><label><input type="checkbox" id="t4-4"><a href="https://eldenring.wiki.gg/wiki/Flock%27s_Canvas_Talisman">Flock's Canvas Talisman</a></label></li>
-        <li><label><input type="checkbox" id="t4-5"><strong class="missable" data-tooltip="The Spirit Jellyfish Ashes must be obtained from Roderika before burning the Erdtree at the Forge of the Giants." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Primal_Glintstone_Blade">Primal Glintstone Blade</a>: Found in a chest in Stargazers' Ruins. Summon the Spirit Jellyfish Ashes next to the jellyfish there to unlock the seal protecting the chest.</label></li>
+        <li><label><input type="checkbox" id="t4-5"><strong class="missable" data-tooltip="The Spirit Jellyfish Ashes must be obtained from Roderika before burning the Erdtree at the Forge of the Giants." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Primal_Glintstone_Blade">Primal Glintstone Blade</a><span class="description">: Found in a chest in Stargazers' Ruins. Summon the Spirit Jellyfish Ashes next to the jellyfish there to unlock the seal protecting the chest.</span></label></li>
         <li><label><input type="checkbox" id="t4-6"><a href="https://eldenring.wiki.gg/wiki/Moon_of_Nokstella">Moon of Nokstella</a></label></li>
         <li><label><input type="checkbox" id="t4-7"><a href="https://eldenring.wiki.gg/wiki/Old_Lord%27s_Talisman">Old Lord's Talisman</a></label></li>
         <li><label><input type="checkbox" id="t4-8"><a href="https://eldenring.wiki.gg/wiki/Radagon_Icon">Radagon Icon</a></label></li>
@@ -265,7 +266,7 @@
         <li><label><input type="checkbox" id="t6-1"><a href="https://eldenring.wiki.gg/wiki/Bull-Goat%27s_Talisman">Bull-Goat's Talisman</a></label></li>
         <li><label><input type="checkbox" id="t6-2"><a href="https://eldenring.wiki.gg/wiki/Blue_Dancer_Charm">Blue Dancer Charm</a></label></li>
         <li><label><input type="checkbox" id="t6-3"><a href="https://eldenring.wiki.gg/wiki/Verdigris_Discus">Verdigris Discus</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
-        <li><label><input type="checkbox" id="t6-4"><strong class="missable" data-tooltip="Must be done before giving Ranni the Fingerslayer Blade, which causes Seluvis's death." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Magic_Scorpion_Charm">Magic Scorpion Charm</a>: Received from Seluvis after giving him the Amber Starlight, then talking to him about it.</label></li>
+        <li><label><input type="checkbox" id="t6-4"><strong class="missable" data-tooltip="Must be done before giving Ranni the Fingerslayer Blade, which causes Seluvis's death." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Magic_Scorpion_Charm">Magic Scorpion Charm</a><span class="description">: Received from Seluvis after giving him the Amber Starlight, then talking to him about it.</span></label></li>
         <li><label><input type="checkbox" id="t6-5"><a href="https://eldenring.wiki.gg/wiki/Fire_Scorpion_Charm">Fire Scorpion Charm</a></label></li>
         <li><label><input type="checkbox" id="t6-6"><a href="https://eldenring.wiki.gg/wiki/Lightning_Scorpion_Charm">Lightning Scorpion Charm</a></label></li>
         <li><label><input type="checkbox" id="t6-7"><a href="https://eldenring.wiki.gg/wiki/Sacred_Scorpion_Charm">Sacred Scorpion Charm</a></label></li>
@@ -293,7 +294,7 @@
         <li><label><input type="checkbox" id="t7-13"><a href="https://eldenring.wiki.gg/wiki/Aged_One%27s_Exultation">Aged One's Exultation</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
         <li><label><input type="checkbox" id="t7-14"><a href="https://eldenring.wiki.gg/wiki/St._Trina%27s_Smile">St. Trina's Smile</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
         <li><label><input type="checkbox" id="t7-15"><a href="https://eldenring.wiki.gg/wiki/Blade_of_Mercy">Blade of Mercy</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
-        <li><label><input type="checkbox" id="t7-16"><strong class="missable" data-tooltip="Serpentbone Blade reward from Tanith must be received before killing Rykard, otherwise Juno's assassination letter never spawns. If Tanith is absent, the reward will be on the drawing room table." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Taker%27s_Cameo">Taker's Cameo</a>: Awarded by Tanith after killing the third assassination target: Juno Hoslow.</label></li>
+        <li><label><input type="checkbox" id="t7-16"><strong class="missable" data-tooltip="Serpentbone Blade reward from Tanith must be received before killing Rykard, otherwise Juno's assassination letter never spawns. If Tanith is absent, the reward will be on the drawing room table." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Taker%27s_Cameo">Taker's Cameo</a><span class="description">: Awarded by Tanith after killing the third assassination target: Juno Hoslow.</span></label></li>
         <li><label><input type="checkbox" id="t7-17"><a href="https://eldenring.wiki.gg/wiki/Ancestral_Spirit%27s_Horn">Ancestral Spirit's Horn</a></label></li>
         <li><label><input type="checkbox" id="t7-18"><a href="https://eldenring.wiki.gg/wiki/Crusade_Insignia">Crusade Insignia</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
         <li><label><input type="checkbox" id="t7-19"><a href="https://eldenring.wiki.gg/wiki/Dried_Bouquet">Dried Bouquet</a><abbr class="dlc" title="Shadow of the Erdtree DLC">SOTE</abbr></label></li>
@@ -303,13 +304,13 @@
 
       <h3 id="category-8"><button type="button" class="collapse-btn btn" aria-label="Toggle Category 8" aria-controls="t8" aria-expanded="true"></button>Category 8<button type="button" id="t-c8" class="check-all" aria-label="Check all">0/0</button></h3>
       <ul id="t8">
-        <li><label><input type="checkbox" id="t8-1"><strong class="missable" data-tooltip="Magma Shot reward from Tanith must be received before killing Rykard, otherwise Rileigh's assassination letter never spawns." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Crepus%27s_Vial">Crepus's Vial</a>: After picking up the second Letter from Volcano Manor, kill the second assassination target: Rileigh the Idle.</label></li>
+        <li><label><input type="checkbox" id="t8-1"><strong class="missable" data-tooltip="Magma Shot reward from Tanith must be received before killing Rykard, otherwise Rileigh's assassination letter never spawns." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Crepus%27s_Vial">Crepus's Vial</a><span class="description">: After picking up the second Letter from Volcano Manor, kill the second assassination target: Rileigh the Idle.</span></label></li>
         <li><label><input type="checkbox" id="t8-2"><a href="https://eldenring.wiki.gg/wiki/Concealing_Veil">Concealing Veil</a></label></li>
         <li><label><input type="checkbox" id="t8-3"><a href="https://eldenring.wiki.gg/wiki/Longtail_Cat_Talisman">Longtail Cat Talisman</a></label></li>
         <li><label><input type="checkbox" id="t8-4"><a href="https://eldenring.wiki.gg/wiki/Furled_Finger%27s_Trick-Mirror">Furled Finger's Trick-Mirror</a></label></li>
         <li><label><input type="checkbox" id="t8-5"><a href="https://eldenring.wiki.gg/wiki/Host%27s_Trick-Mirror">Host's Trick-Mirror</a></label></li>
         <li><label><input type="checkbox" id="t8-6"><a href="https://eldenring.wiki.gg/wiki/Shabriri%27s_Woe">Shabriri's Woe</a></label></li>
-        <li><label><input type="checkbox" id="t8-7"><strong class="missable" data-tooltip="You must give Rya the Serpent's Amnion before killing Rykard, otherwise she will permanently disappear from the game." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Daedicar%27s_Woe">Daedicar's Woe</a>: Drops at the end of Rya's questline.</label></li>
+        <li><label><input type="checkbox" id="t8-7"><strong class="missable" data-tooltip="You must give Rya the Serpent's Amnion before killing Rykard, otherwise she will permanently disappear from the game." tabindex="0">MISSABLE -</strong> <a href="https://eldenring.wiki.gg/wiki/Daedicar%27s_Woe">Daedicar's Woe</a><span class="description">: Drops at the end of Rya's questline.</span></label></li>
         <li><label><input type="checkbox" id="t8-8"><a href="https://eldenring.wiki.gg/wiki/Sacrificial_Twig">Sacrificial Twig</a></label></li>
       </ul>
     </form>
