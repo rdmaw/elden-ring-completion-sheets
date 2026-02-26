@@ -40,7 +40,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] New Game Plus
 - [x] Talismans
 - [x] Large codebase restructure
-- [ ] Add tooltips to all remaining missables
+- [x] Add tooltips to all remaining missables
 - [ ] East Gravesite Plain
 - [ ] Belurat
 - [ ] Ellac River
