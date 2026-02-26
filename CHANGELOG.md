@@ -9,6 +9,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Extensively tested and added tooltip explanations for all MISSABLE tags. These can be viewed when hovered over.
 - New Show/Hide info button on sheets with lists of items. With the addition of many MISSABLE tags and item descriptions, the UI can get cluttered on smaller sizes. The Hide info button hides all MISSABLE tags and item location descriptions for a cleaner UI.
 - New missable tags to many steps that I hadn't tested properly before due to requiring specific conditions in a playthrough.
+- Two new steps to Leyndell, Royal Capital in the walkthrough for farming the Duelist and Guardian missable items. These items have also gotten descriptions on the Weapons and Armor sheets.
 - New optional step added to Varre's questline and the walkthroughs.
 - New note about missable Info item "About Invasion Multiplayer" and how to obtain it.
 - Added Dark Moon Ring as a secondary condition to make Blaidd spawn outside Ranni's Rise.
