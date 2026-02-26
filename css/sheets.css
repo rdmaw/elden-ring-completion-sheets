@@ -156,11 +156,9 @@ button {
 
 .missable::before {
   content: attr(data-tooltip);
-  z-index: 1;
   pointer-events: none;
   position: absolute;
   inset: auto auto 100% 0;
-  width: max-content;
   max-width: min(26rem, 60vw);
   padding: 0.35em 0.55em;
   background-color: var(--search);

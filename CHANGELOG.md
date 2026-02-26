@@ -5,6 +5,9 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
 ## 2026-02-26
 
+### Fixed
+- Missable tag on the FAQ page not showing when hovered.
+
 ### Added
 - Extensively tested and added tooltip explanations for all MISSABLE tags. These can be viewed when hovered over.
 - New Show/Hide info button on sheets with lists of items. With the addition of many MISSABLE tags and item descriptions, the UI can get cluttered on smaller sizes. The Hide info button hides all MISSABLE tags and item location descriptions for a cleaner UI.
