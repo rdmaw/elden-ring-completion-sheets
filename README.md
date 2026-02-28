@@ -24,8 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Missables in Outskirts, Leyndell, Shunning Grounds & Forbidden Lands
-- [x] Rewrite old sections
 - [x] Remove SVG sprite
 - [x] Clean up CSS/JS
 - [x] Begin DLC Walkthrough
@@ -44,3 +42,5 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [ ] East Gravesite Plain
 - [ ] Belurat
 - [ ] Ellac River
+- [ ] Cerulean Coast
+- [ ] Castle Ensis
