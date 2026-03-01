@@ -1,5 +1,5 @@
 # Elden Ring Cheat Sheets
-A checklist-based progression tracking tool for Elden Ring. Visit the project at [eldenring.redmaw.dev](https://eldenring.redmaw.dev).
+A checklist-based progression tracking tool to 100% Elden Ring. Visit the project at [eldenring.redmaw.dev](https://eldenring.redmaw.dev).
 
 See the [Changelog](CHANGELOG.md) for a list of notable changes with each update.
 
@@ -24,7 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Remove SVG sprite
 - [x] Clean up CSS/JS
 - [x] Begin DLC Walkthrough
 - [x] Create Steam guide
@@ -44,3 +43,4 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [ ] Ellac River
 - [ ] Cerulean Coast
 - [ ] Castle Ensis
+- [ ] Scadu Altus
