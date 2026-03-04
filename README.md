@@ -38,7 +38,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Talismans
 - [x] Large codebase restructure
 - [x] Add tooltips to all remaining missables
-- [ ] East Gravesite Plain
+- [x] East Gravesite Plain
 - [ ] Belurat
 - [ ] Ellac River
 - [ ] Cerulean Coast

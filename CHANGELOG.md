@@ -3,6 +3,12 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-03-04
+
+### Added
+- East Gravesite Plain.
+- Thiollier's inventory to the Merchants sheet.
+
 ## 2026-02-26
 
 ### Fixed
