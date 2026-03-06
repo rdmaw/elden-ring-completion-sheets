@@ -39,7 +39,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Large codebase restructure
 - [x] Add tooltips to all remaining missables
 - [x] East Gravesite Plain
-- [ ] Belurat
+- [x] Belurat
 - [ ] Ellac River
 - [ ] Cerulean Coast
 - [ ] Castle Ensis
