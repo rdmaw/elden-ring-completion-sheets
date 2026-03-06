@@ -3,6 +3,18 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-03-06
+
+### Added
+- Belurat, Tower Settlement.
+- New unfinished questlines: Hornsent Grandam, Fire Knight Queelign.
+- New unfinished resource table for DLC remembrances.
+- New missable in Hornsent's questline.
+- Remembrance of the Dancing Lion added to NG+ sheet.
+
+### Changed
+- Updated some of the uncertain questline steps in Gravesite Plain that had question marks now that I've completed some testing.
+
 ## 2026-03-04
 
 ### Added
