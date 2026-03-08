@@ -24,7 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Clean up CSS/JS
 - [x] Begin DLC Walkthrough
 - [x] Create Steam guide
 - [x] West Gravesite Plain
@@ -42,5 +41,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Belurat
 - [ ] Ellac River
 - [ ] Cerulean Coast
+- [ ] Charo's Hidden Grave
 - [ ] Castle Ensis
 - [ ] Scadu Altus
