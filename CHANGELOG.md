@@ -3,6 +3,20 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-03-17
+
+### Added
+- Ellac River.
+- Cerulean Coast.
+- Charo's Hidden Grave.
+- Castle Ensis.
+- New unfinished questline: Ancient Dragon Florissax.
+- Added Ghostflame Breath spell to the Merchants sheet.
+- Added Rellana's remembrance and its items to the Resources, Merchants, and NG+ sheets.
+
+### Changed
+- Split the Cathedral of Dragon Communion step in the base game Walkthrough into three easier-to-follow steps.
+
 ## 2026-03-06
 
 ### Added
