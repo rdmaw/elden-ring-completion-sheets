@@ -24,8 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Begin DLC Walkthrough
-- [x] Create Steam guide
 - [x] West Gravesite Plain
 - [x] Weapons
 - [x] Armor
@@ -43,4 +41,5 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Cerulean Coast
 - [x] Charo's Hidden Grave
 - [x] Castle Ensis
-- [ ] Scadu Altus
+- [ ] West Scadu Altus
+- [ ] Rauh Base
