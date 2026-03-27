@@ -24,8 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] West Gravesite Plain
-- [x] Weapons
 - [x] Armor
 - [x] Ashes
 - [x] Spells
@@ -41,5 +39,8 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Cerulean Coast
 - [x] Charo's Hidden Grave
 - [x] Castle Ensis
-- [ ] West Scadu Altus
+- [x] West Scadu Altus
 - [ ] Rauh Base
+- [ ] East Scadu Altus
+- [ ] Stone Coffin Fissure
+- [ ] Shadow Keep
