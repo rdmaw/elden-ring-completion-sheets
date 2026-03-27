@@ -3,6 +3,12 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-03-27
+
+### Added
+- West Scadu Altus, 97 walkthrough steps and 11 npc steps.
+- New unfinished questline: Dryleaf Dane.
+
 ## 2026-03-17
 
 ### Added
