@@ -24,7 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Armor
 - [x] Ashes
 - [x] Spells
 - [x] Misc Items
@@ -40,7 +39,8 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Charo's Hidden Grave
 - [x] Castle Ensis
 - [x] West Scadu Altus
-- [ ] Rauh Base
+- [x] Rauh Base
 - [ ] East Scadu Altus
 - [ ] Stone Coffin Fissure
 - [ ] Shadow Keep
+- [ ] Church District
