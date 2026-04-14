@@ -959,6 +959,9 @@
       <ul id="q44">
         <li><label><input type="checkbox" id="q44-1"><strong>Optional:</strong> Exhaust her dialogue at the Three-Path Cross.</label></li>
         <li><label><input type="checkbox" id="q44-2"><strong>Optional:</strong> If you summon Freyja for the Divine Beast Dancing Lion or Rugalea the Great Red Bear and successfully kill the boss, ask her about the damage to her helm, then ask about that other man.</label></li>
+        <li><label><input type="checkbox" id="q44-3">Talk to her after Miquella's Great Rune breaks. Optionally, ask what she intends to look into and what if she becomes the enemy.</label></li>
+        <!-- <li><label><input type="checkbox" id="q44-4">Talk to her next to the fireplace at the Storehouse, Seventh Floor.</label></li> -->
+        <!-- <li><label><input type="checkbox" id="q44-5">Talk to Ansbach at the second floor and tell him about Freyja's decision.</label></li> -->
       </ul>
 
       <h3 id="ansbach"><button type="button" class="collapse-btn btn" aria-label="Toggle Sir Ansbach" aria-controls="q45" aria-expanded="true"></button>Sir Ansbach<button type="button" id="q-c45" class="check-all" aria-label="Check all">0/0</button></h3>
@@ -969,30 +972,55 @@
         <li><label><input type="checkbox" id="q45-4"><strong>Optional:</strong> After touching the Scaduview cross in Scadu Altus, talk to him about the cross where the eye was abandoned.</label></li>
         <li><label><input type="checkbox" id="q45-5"><strong>Optional:</strong> After touching the cross in Cerulean Coast, talk to him about the cross at the coast.</label></li>
         <li><label><input type="checkbox" id="q45-6"><strong>Optional:</strong> After talking about the Belurat and Scaduview crosses, he reaches a conclusion about Miquella's intentions.</label></li>
+        <li><label><input type="checkbox" id="q45-7">Talk to him after Miquella's Great Rune breaks.</label></li>
+        <!-- <li><label><input type="checkbox" id="q45-8"><strong>Optional?</strong> Exhaust his dialogue in a room at the Storeroom second floor.</label></li> -->
       </ul>
 
       <h3 id="moore"><button type="button" class="collapse-btn btn" aria-label="Toggle Moore" aria-controls="q46" aria-expanded="true"></button>Moore<button type="button" id="q-c46" class="check-all" aria-label="Check all">0/0</button></h3>
       <ul id="q46">
         <li class="top-note"><strong>Note:</strong> Killing any two of the friendly <a href="https://eldenring.wiki.gg/wiki/Forager_Brood">Forager Brood</a> will cause Moore to invade you and fail the questline.</li>
-        <li><label><input type="checkbox" id="q46-1"><strong>Optional?</strong> Purchase an item from him to unlock some repeatable dialogue about finding things.</label></li>
-        <li><label><input type="checkbox" id="q46-2"><strong class="missable" data-tooltip="Each cookbook is missable if its Forager Brood is killed. The seventh cookbook, received from Moore, becomes unobtainable if any are killed." tabindex="0">MISSABLE -</strong> Interact with the Forager Brood to receive a cookbook from each:</label>
+        <li><label><input type="checkbox" id="q46-1"><strong>Optional:</strong> Purchase an item from him to unlock some repeatable dialogue.</label></li>
+        <li><label><input type="checkbox" id="q46-2"><strong class="missable" data-tooltip="Each cookbook is missable if its Forager Brood is killed. If you tell Moore to remain sad forever, the Forager Brood disappear and the cookbooks become unobtainable. The seventh cookbook, received from Moore, becomes unobtainable if any are killed, or if not received before reloading the area after you tell him to either put it behind you or remain sad forever." tabindex="0">MISSABLE -</strong> Interact with the Forager Brood to receive a cookbook from each:</label>
           <ul>
             <li><label><input type="checkbox" id="q46-3"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_1">Forager Brood Cookbook [1]</a>: Received from the Forager Brood on the cliff near the Ruined Forge of Starfall Past.</label></li>
             <li><label><input type="checkbox" id="q46-4"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_2">Forager Brood Cookbook [2]</a>: Received from the Forager Brood on the hill south-southeast of Cliffroad Terminus.</label></li>
             <li><label><input type="checkbox" id="q46-5"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_3">Forager Brood Cookbook [3]</a>: Received from the Forager Brood in the woods past Ellac River Downstream.</label></li>
             <li><label><input type="checkbox" id="q46-6"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_4">Forager Brood Cookbook [4]</a>: Received from the Forager Brood near the Church of the Crusade after you heal it with a Warming Stone.</label></li>
             <li><label><input type="checkbox" id="q46-7"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_5">Forager Brood Cookbook [5]</a>: Received from the Forager Brood in the poison swamp past a short tunnel north-northeast of Moorth Ruins.</label></li>
-            <!-- <li><label><input type="checkbox" id="q46-8"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_6">Forager Brood Cookbook [6]</a>: Received from the Forager Brood.</label></li> -->
-            <li><label><input type="checkbox" id="q46-9"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_7">Forager Brood Cookbook [7]</a>: Received from Moore after you heal the wounded Forager Brood near the Church of the Crusade.</label></li>
+            <li><label><input type="checkbox" id="q46-8"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_6">Forager Brood Cookbook [6]</a>: Received from the Forager Brood on top of the tunnel that leads to the Church District.</label></li>
+            <li><label><input type="checkbox" id="q46-9"><a href="https://eldenring.wiki.gg/wiki/Forager_Brood_Cookbook_7">Forager Brood Cookbook [7]</a>: Received from Moore after you heal the wounded Forager Brood near the Church of the Crusade. If Miquella's Great Rune is broken, you must first tell him to either put it behind you or remain sad forever (without reloading the area).</label></li>
+          </ul>
+        </li>
+        <li><label><input type="checkbox" id="q46-10">Talk to him after Miquella's Great Rune breaks and you'll be faced with three options:</label>
+          <ul>
+            <li><label><input type="checkbox" id="q46-11"><strong>Put it behind you:</strong></label>
+              <ul>
+                <li><label><input type="checkbox" id="q46-12"><strong>Note:</strong> The Forager Brood remain, but Moore disappears and will show up in the fight before the final boss.</label></li>
+                <li><label><input type="checkbox" id="q46-13">After defeating Leda and her allies in Enir-Ilim, loot <a href="https://eldenring.wiki.gg/wiki/Moore%27s_Bell_Bearing">Moore's Bell Bearing</a>, the <a href="https://eldenring.wiki.gg/wiki/Verdigris_Greatshield">Verdigris Greatshield</a>, and <a href="https://eldenring.wiki.gg/wiki/Verdigris_Set">Verdigris Set</a> from Moore's corpse in the arena.</label></li>
+              </ul>
+            </li>
+            <li><label><input type="checkbox" id="q46-14"><strong>Remain sad forever:</strong></label>
+              <ul>
+                <li><label><input type="checkbox" id="q46-15"><strong>Note:</strong> The Forager Brood disappear and Moore is excluded from the fight before the final boss.</label></li>
+                <li><label><input type="checkbox" id="q46-16">Moore dies next to the Forager Brood by the Church of the Crusade. Loot <a href="https://eldenring.wiki.gg/wiki/Moore%27s_Bell_Bearing">Moore's Bell Bearing</a>, the <a href="https://eldenring.wiki.gg/wiki/Verdigris_Greatshield">Verdigris Greatshield</a>, and <a href="https://eldenring.wiki.gg/wiki/Verdigris_Set">Verdigris Set</a> from his corpse.</label></li>
+              </ul>
+            </li>
+            <li><label><input type="checkbox" id="q46-17"><strong>Do nothing:</strong></label>
+              <ul>
+                <li><label><input type="checkbox" id="q46-18">Nothing happens. Moore remains at his shop and you delay the choice between the other options. Pick this if you don't have the first six cookbooks.</label></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
 
       <h3 id="thiollier"><button type="button" class="collapse-btn btn" aria-label="Toggle Thiollier" aria-controls="q47" aria-expanded="true"></button>Thiollier<button type="button" id="q-c47" class="check-all" aria-label="Check all">0/0</button></h3>
       <ul id="q47">
-        <li><label><input type="checkbox" id="q47-1">Talk to him at the Pillar Path Cross.</label></li>
-        <li><label><input type="checkbox" id="q47-2">Talk to Moore at the Main Gate Cross to receive the <a href="https://eldenring.wiki.gg/wiki/Black_Syrup">Black Syrup</a>.</label></li>
-        <li><label><input type="checkbox" id="q47-3">Give Thiollier the Black Syrup, ask him about it, then tell him that you're weary of life to receive <a href="https://eldenring.wiki.gg/wiki/Thiollier%27s_Concoction">Thiollier's Concoction</a>.</label></li>
+        <li><label><input type="checkbox" id="q47-1">Talk to Thiollier at the Pillar Path Cross.</label></li>
+        <li><label><input type="checkbox" id="q47-2"><strong class="missable" data-tooltip="Must be obtained before Thiollier relocates to the Garden of Deep Purple, or before Moore disappears after his multiple choice." tabindex="0">MISSABLE:</strong> Talk to Moore at the Main Gate Cross to receive the <a href="https://eldenring.wiki.gg/wiki/Black_Syrup">Black Syrup</a>.</label></li>
+        <li><label><input type="checkbox" id="q47-3"><strong class="missable" data-tooltip="Must be done before he relocates to the Garden of Deep Purple." tabindex="0">MISSABLE:</strong> Give Thiollier the Black Syrup, ask him about it, then tell him that you're weary of life to receive <a href="https://eldenring.wiki.gg/wiki/Thiollier%27s_Concoction">Thiollier's Concoction</a>.</label></li>
+        <li><label><input type="checkbox" id="q47-4"><strong>Optional?</strong> Talk to him after Miquella's Great Rune breaks.</label></li>
+        <li><label><input type="checkbox" id="q47-5"><strong>Optional?</strong> Talk to him after reloading the area twice to hear that he's heading south, or tell him St. Trina's whereabouts.</label></li>
       </ul>
 
       <h3 id="igon"><button type="button" class="collapse-btn btn" aria-label="Toggle Igon" aria-controls="q48" aria-expanded="true"></button>Igon<button type="button" id="q-c48" class="check-all" aria-label="Check all">0/0</button></h3>
