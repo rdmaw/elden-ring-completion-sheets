@@ -3,6 +3,14 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-04-18
+
+### Added
+- East Scadu Altus, ? walkthrough steps, ? npc step, and 1 boss step.
+- Trophy emojis to mark all 42 achievement-earning steps in the Walkthrough (and also to the Bosses sheet to highlight all trophy bosses).
+- New unfinished questline: Count Ymir.
+- New merchant: Count Ymir.
+
 ## 2026-04-08
 
 ### Added
