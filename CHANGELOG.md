@@ -11,6 +11,9 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - New unfinished questline: Count Ymir.
 - New merchant: Count Ymir.
 
+### Changed
+- Rewritten several steps in Limgrave to sound better.
+
 ## 2026-04-08
 
 ### Added
