@@ -15,6 +15,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 ### Changed
 - Rewritten several steps in Limgrave to sound better.
 - Rewritten some questline steps to sound better.
+- Moved explanation of Scrolls and Prayerbooks to below the first Miriel step instead of when you get the first scroll.
 
 ## 2026-04-08
 
