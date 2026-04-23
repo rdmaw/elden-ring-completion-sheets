@@ -14,6 +14,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
 ### Changed
 - Rewritten several steps in Limgrave to sound better.
+- Rewritten some questline steps to sound better.
 
 ## 2026-04-08
 
