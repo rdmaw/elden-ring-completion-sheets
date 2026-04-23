@@ -24,7 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Ashes
 - [x] Spells
 - [x] Misc Items
 - [x] Key Items
@@ -40,7 +39,8 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Castle Ensis
 - [x] West Scadu Altus
 - [x] Rauh Base
-- [ ] East Scadu Altus
+- [x] East Scadu Altus
 - [ ] Stone Coffin Fissure
 - [ ] Shadow Keep
 - [ ] Church District
+- [ ] Hinterland

@@ -10,6 +10,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Trophy emojis to mark all 42 achievement-earning steps in the Walkthrough (and also to the Bosses sheet to highlight all trophy bosses).
 - New unfinished questlines: Count Ymir and Swordhand of Night Jolan.
 - New merchant: Count Ymir.
+- Greasemonger's Bell Bearing to Twin Maiden Husks' inventory.
 
 ### Changed
 - Rewritten several steps in Limgrave to sound better.
