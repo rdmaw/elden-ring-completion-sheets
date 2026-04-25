@@ -3,6 +3,12 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-04-25
+
+### Added
+- Stone Coffin Fissure with 28 walkthrough steps, 4 npc steps, and 1 boss.
+- Remembrance of Putrescence items to NG+ sheet and rune value to Resources.
+
 ## 2026-04-23
 
 ### Added

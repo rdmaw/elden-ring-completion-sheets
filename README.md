@@ -40,7 +40,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] West Scadu Altus
 - [x] Rauh Base
 - [x] East Scadu Altus
-- [ ] Stone Coffin Fissure
+- [x] Stone Coffin Fissure
 - [ ] Shadow Keep
 - [ ] Church District
 - [ ] Hinterland
