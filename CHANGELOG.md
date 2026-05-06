@@ -3,6 +3,15 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-05-06
+
+### Added
+- Shadow Keep consisting of two separate sections: Shadow Keep and Church District
+- Sunflower, Gaius, and Messmer's remembrance items and rune values.
+- Notes about conflicting questline choices added to Sellen, Jerren, Leda, Hornsent, and Ansbach's questlines.
+- Filled in a large amount of dlc missable items and optionals from thorough testing.
+- Finished Hornsent's and Hornsent Grandam's questlines.
+
 ## 2026-04-25
 
 ### Added

@@ -24,8 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Spells
-- [x] Misc Items
 - [x] Key Items
 - [x] New Game Plus
 - [x] Talismans
@@ -41,6 +39,8 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Rauh Base
 - [x] East Scadu Altus
 - [x] Stone Coffin Fissure
-- [ ] Shadow Keep
-- [ ] Church District
-- [ ] Hinterland
+- [x] Shadow Keep
+- [x] Church District
+- [ ] Scaduview
+- [ ] Ymir's questline
+- [ ] Watering Hole
