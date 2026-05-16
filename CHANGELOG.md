@@ -3,6 +3,14 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
+## 2026-05-16
+
+### Added
+- New DLC section: Scaduview
+- Finished Ymir's and Jolan's questlines
+- Finished Ymir's merchant inventory
+
+
 ## 2026-05-06
 
 ### Added

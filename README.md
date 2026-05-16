@@ -41,6 +41,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Stone Coffin Fissure
 - [x] Shadow Keep
 - [x] Church District
-- [ ] Scaduview
+- [x] Scaduview
 - [ ] Ymir's questline
 - [ ] Watering Hole
