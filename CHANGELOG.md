@@ -3,7 +3,7 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
-## 2026-05-16
+## 2026-05-23
 
 ### Added
 - New DLC section: Scaduview

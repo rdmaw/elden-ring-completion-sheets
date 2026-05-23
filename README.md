@@ -42,5 +42,5 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Shadow Keep
 - [x] Church District
 - [x] Scaduview
-- [ ] Ymir's questline
+- [x] Ymir's questline
 - [ ] Watering Hole
