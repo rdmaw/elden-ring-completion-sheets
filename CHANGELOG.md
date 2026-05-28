@@ -3,13 +3,22 @@
 This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
 Dates follow the ISO 8601 standard (YYYY-MM-DD).
 
-<!-- ## 2026-05-23
+## 2026-05-29
+
+### Breaking Changes!
+- Added an invisible placeholder for an Irises section on the Miscellaneous page for the future. I have updated the category numbers for each existing section to accommodate for this change. You may need to re-check some steps on the Miscellaneous sheet.
 
 ### Added
-- New DLC section: Scaduview
-- Finished Ymir's and Jolan's questlines
-- Finished Ymir's merchant inventory -->
+- New DLC section: Scaduview.
+- Finished Ymir's and Jolan's questlines.
+- Finished Ymir's merchant inventory.
+- Metyr's Remembrance and remembrance items to both Resources and NG+ sheets. 
+- Remaining duplication coffins to the NG+ sheet. 
 
+### Changed
+- Updated question-marked optional tags from recent questline testing.
+
+-Sorry this one took so long, got hooked on Subnautica again.
 
 ## 2026-05-06
 
