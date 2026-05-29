@@ -1,7 +1,8 @@
 # Changelog
 
-This document lists all notable changes to Elden Ring Cheat Sheets with each deployment.
-Dates follow the ISO 8601 standard (YYYY-MM-DD).
+This document lists all notable changes to Elden Ring Cheat Sheets with each deployment. If recent changes are not reflected on the website, try a hard refresh (CTRL + Shift + R) to force a fresh reload.
+
+Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
 ## 2026-05-29
 
@@ -14,6 +15,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Finished Ymir's merchant inventory.
 - Metyr's Remembrance and remembrance items to both Resources and NG+ sheets. 
 - Remaining duplication coffins to the NG+ sheet. 
+- Added Key Items and Misc Items sections to the Steam Guide, alongside many adjustments and refinements.
 
 ### Changed
 - Updated question-marked optional tags from recent questline testing.

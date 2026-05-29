@@ -24,7 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] Key Items
 - [x] New Game Plus
 - [x] Talismans
 - [x] Large codebase restructure
@@ -43,4 +42,5 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Church District
 - [x] Scaduview
 - [x] Ymir's questline
+- [x] Steam Guide Polish
 - [ ] Watering Hole
