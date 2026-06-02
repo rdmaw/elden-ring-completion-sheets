@@ -4,7 +4,7 @@ _headers
 wrangler.jsonc
 fonts
 images
-goatcounter.js
+goatcounter.*.js
 sheets.*.js
 sheets.*.css
 404.*
