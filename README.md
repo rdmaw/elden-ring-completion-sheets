@@ -24,11 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 ## To Do
 
-- [x] New Game Plus
-- [x] Talismans
-- [x] Large codebase restructure
-- [x] Add tooltips to all remaining missables
-- [x] East Gravesite Plain
 - [x] Belurat
 - [x] Ellac River
 - [x] Cerulean Coast
@@ -44,3 +39,8 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Ymir's questline
 - [x] Steam Guide Polish
 - [ ] Watering Hole
+- [ ] Abyssal Woods
+- [ ] Midra's Manse
+- [ ] Jagged Peak
+- [ ] Rauh Ruins
+- [ ] Enir-Ilim
