@@ -4,6 +4,20 @@ This document lists all notable changes to Elden Ring Cheat Sheets with each dep
 
 Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
+<!-- ## 2026-06-02
+
+### Fixed
+- Added missing SOTE tags to the table of content sections on the Weapons, Ashes, and Spells sheets.
+- Added missing SOTE tags to every item in the DLC Cookbooks section on the Key Items sheet.
+
+### Added
+- New missables: Companion Jar.
+- Notes on the Questlines sheet regarding the Radahn Festival skip for each questline affected.
+
+### Changed
+- Renamed "Spiral Incantations" to "Hornsent Incantations" on the Spells sheet.
+- Updated and pinned GoatCounter to the newest version. -->
+
 ## 2026-05-29
 
 ### Breaking Changes!
