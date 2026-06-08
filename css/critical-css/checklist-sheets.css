@@ -135,8 +135,7 @@ strong {
 }
 
 .collapsed,
-.compact-checklists .missable,
-.compact-checklists .description,
+.compact-checklists .hide-info,
 .hide-checked .checked,
 #hideSvg {
   display: none;
