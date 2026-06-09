@@ -47,8 +47,8 @@
 }
 
 :focus-visible {
-  border-radius: 0.0625rem;
-  outline: 0.125rem solid var(--nav-text);
+  border-radius: 1px;
+  outline: 2px solid var(--nav-text);
 }
 
 /* DEFAULTS
@@ -142,7 +142,7 @@ th[scope=row] {
 nav {
   display: flex;
   background-color: var(--nav);
-  border-bottom: 0.125rem solid var(--nav-border);
+  border-bottom: 2px solid var(--nav-border);
 }
 
 .nav {
@@ -160,8 +160,8 @@ nav {
   width: 3.45rem;
   height: 2.8rem;
   background-color: var(--background);
-  border: 0.125rem solid var(--nav-border);
-  border-radius: 0.25rem;
+  border: 2px solid var(--nav-border);
+  border-radius: 4px;
 }
 
 #menu-icon {
@@ -237,8 +237,8 @@ header {
   padding: 0.25rem 0.5rem;
   background-color: var(--button);
   color: inherit;
-  border: 0.0625rem solid var(--nav-border);
-  border-radius: 0.25rem;
+  border: 1px solid var(--nav-border);
+  border-radius: 4px;
   font-family: inherit;
   font-size: inherit;
 }
