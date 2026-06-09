@@ -111,7 +111,6 @@ a {
   text-decoration: none;
 }
 
-.missable,
 .red {
   color: var(--red);
 }
@@ -252,6 +251,7 @@ nav span,
 }
 
 h2 span {
+  padding-block: 0.15em;
   font-size: 0.95em;
 }
 
@@ -355,6 +355,21 @@ input[type=checkbox] {
   width: 1.5em;
   height: 1.5em;
   accent-color: var(--done);
+}
+
+.badge {
+  margin-right: 0.4rem;
+  padding: 0.1rem 0.2rem;
+  color: var(--badge);
+  border: 0.0625rem solid var(--badge);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.missable {
+  color: var(--red);
+  border: 0.125rem solid var(--progress);
 }
 
 kbd {

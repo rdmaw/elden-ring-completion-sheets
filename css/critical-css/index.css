@@ -111,7 +111,6 @@ a {
   text-decoration: none;
 }
 
-.missable,
 .red {
   color: var(--red);
 }
@@ -243,6 +242,21 @@ ul {
 
 li ul {
   padding-left: 1.75rem;
+}
+
+.badge {
+  margin-right: 0.4rem;
+  padding: 0.1rem 0.2rem;
+  color: var(--badge);
+  border: 0.0625rem solid var(--badge);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.missable {
+  color: var(--red);
+  border: 0.125rem solid var(--progress);
 }
 
 .btn {
