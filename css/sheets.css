@@ -36,11 +36,11 @@ input[type=checkbox] {
   padding: 0.5em 1em;
   background-color: var(--background);
   color: var(--link);
-  border-radius: 0 0 0.25rem 0.25rem;
+  border-radius: 0 0 4px 4px;
 }
 
 #skip-link:focus {
-  outline: 0.125rem solid var(--nav-border);
+  outline: 2px solid var(--nav-border);
   text-decoration: underline;
   transform: translateY(0);
 }
@@ -51,7 +51,7 @@ input[type=checkbox] {
 
 .nav-list a:active {
   background-color: var(--background);
-  border-radius: 0.25rem;
+  border-radius: 4px;
   text-decoration: none;
 }
 
@@ -63,9 +63,9 @@ input[type=checkbox] {
   width: 17rem;
   max-height: calc(100svh - 1.2rem);
   background-color: var(--background);
-  border: 0.125rem solid var(--nav-border);
+  border: 2px solid var(--nav-border);
   border-left-width: 0;
-  border-radius: 0 0.625rem 0.625rem 0;
+  border-radius: 0 10px 10px 0;
 }
 
 .sidebar-header {
@@ -75,8 +75,8 @@ input[type=checkbox] {
   min-height: 3.4rem;
   background-color: var(--nav);
   color: var(--nav-text);
-  border-bottom: 0.125em solid var(--nav-border);
-  border-top-right-radius: 0.5rem;
+  border-bottom: 2px solid var(--nav-border);
+  border-top-right-radius: 8px;
 }
 
 #sidebar-title {
@@ -114,13 +114,13 @@ input[type=checkbox] {
   display: block;
   padding: 0.75rem;
   color: var(--text);
-  border-bottom: 0.0625rem dotted var(--nav-border);
+  border-bottom: 1px dotted var(--nav-border);
   line-height: 1.2;
 }
 
 #sheets a:active {
   background-color: var(--sidebar-hover);
-  border-radius: 0.25rem;
+  border-radius: 4px;
   text-decoration: none;
 }
 
@@ -163,8 +163,9 @@ button {
   padding: 0.35em 0.55em;
   background-color: var(--search);
   color: var(--text);
-  border: 0.0625rem solid var(--nav-border);
-  border-radius: 0.25rem;
+  border: 2px solid oklch(from var(--background) 0.6 c h);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px oklch(from var(--nav) l c h / 0.7); 
   font-size: 0.85rem;
   font-weight: 400;
   text-wrap: wrap;
@@ -180,9 +181,9 @@ button {
 
 kbd {
   background-color: var(--button);
-  border: 0.0625rem solid var(--nav-border);
-  border-radius: 0.1875rem;
-  box-shadow: 0 0.0625rem 0 var(--nav-border);
+  border: 1px solid var(--nav-border);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 var(--nav-border);
 }
 
 footer {
@@ -204,7 +205,7 @@ footer a:active {
   inset: auto 1.25rem 1.25rem auto;
   height: auto;
   padding: 0.5rem;
-  border: 0.125rem solid var(--nav-border);
+  border: 2px solid var(--nav-border);
   border-radius: 50%;
   opacity: 0;
   transform: translateY(6.25rem);
@@ -247,7 +248,7 @@ footer a:active {
   }
 
   .missable::before {
-    transition: opacity 0.1s, visibility 0.1s;
+    transition: opacity 0.05s, visibility 0.05s;
   }
 
   #up-btn {
@@ -262,7 +263,7 @@ footer a:active {
 
   .nav-list a:hover {
     background-color: var(--background);
-    border-radius: 0.3125rem;
+    border-radius: 4px;
     text-decoration: none;
   }
 
@@ -272,7 +273,7 @@ footer a:active {
 
   #sheets a:hover {
     background-color: var(--sidebar-hover);
-    border-radius: 0.25rem;
+    border-radius: 4px;
     text-decoration: none;
   }
 
@@ -322,6 +323,7 @@ footer a:active {
   nav,
   #search,
   button,
+  .badge,
   abbr {
     display: none !important;
   }
