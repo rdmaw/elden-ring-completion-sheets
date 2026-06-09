@@ -36,7 +36,7 @@ input[type=checkbox] {
   padding: 0.5em 1em;
   background-color: var(--background);
   color: var(--link);
-  border-radius: 0 0 0.3125rem 0.3125rem;
+  border-radius: 0 0 0.25rem 0.25rem;
 }
 
 #skip-link:focus {
@@ -51,7 +51,7 @@ input[type=checkbox] {
 
 .nav-list a:active {
   background-color: var(--background);
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
   text-decoration: none;
 }
 
@@ -164,7 +164,7 @@ button {
   background-color: var(--search);
   color: var(--text);
   border: 0.0625rem solid var(--nav-border);
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
   font-size: 0.85em;
   font-weight: 400;
   text-wrap: wrap;

@@ -131,7 +131,7 @@ strong {
 #search,
 .btn {
   color: inherit;
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
   font-family: inherit;
   font-size: inherit;
 }
@@ -172,7 +172,7 @@ nav {
   height: 2.8rem;
   background-color: var(--background);
   border: 0.125rem solid var(--nav-border);
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
 }
 
 #menu-icon {
@@ -245,7 +245,7 @@ nav span,
   background-color: var(--progress);
   color: var(--progress-text);
   border: none;
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
   font: inherit;
   font-size: 0.9em;
   font-weight: 450;

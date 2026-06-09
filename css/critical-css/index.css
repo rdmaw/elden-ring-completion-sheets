@@ -172,7 +172,7 @@ nav {
   height: 2.8rem;
   background-color: var(--background);
   border: 0.125rem solid var(--nav-border);
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
 }
 
 #menu-icon {
@@ -249,7 +249,7 @@ li ul {
   padding: 0.25rem 0.5rem;
   background-color: var(--button);
   color: inherit;
-  border-radius: 0.3125rem;
+  border-radius: 0.25rem;
 }
 
 #scroll-observer {
