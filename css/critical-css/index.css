@@ -28,6 +28,7 @@
   --done: oklch(0.54 0.14 160);
   --link: oklch(0.54 0.21 260);
   --red: oklch(0.54 0.21 40);
+  --badge: oklch(from var(--background) 0.45 c h);
 
   --strong: 550;
 }
@@ -46,6 +47,7 @@
   --done: oklch(0.48 0.1 155);
   --link: oklch(0.612 0.1 250);
   --red: oklch(0.631 0.15 25);
+  --badge: oklch(from var(--background) 0.7 c h);
 
   --strong: 600;
 }
