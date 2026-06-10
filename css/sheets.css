@@ -150,11 +150,11 @@ button {
   filter: brightness(1.1);
 }
 
-.missable {
+.tooltip {
   cursor: help;
 }
 
-.missable::before {
+.tooltip::before {
   content: attr(data-tooltip);
   pointer-events: none;
   position: absolute;
@@ -163,7 +163,7 @@ button {
   padding: 0.35em 0.55em;
   background-color: var(--search);
   color: var(--text);
-  border: 2px solid oklch(from var(--background) 0.6 c h);
+  border: 1px solid oklch(from var(--background) 0.6 c h);
   border-radius: 4px;
   box-shadow: 0 4px 12px oklch(from var(--nav) l c h / 0.7); 
   font-size: 0.85rem;
@@ -174,7 +174,7 @@ button {
   visibility: hidden;
 }
 
-.missable:focus::before {
+.tooltip:focus::before {
   opacity: 1;
   visibility: visible;
 }
@@ -285,7 +285,7 @@ footer a:active {
     transform: scale(1.1);
   }
 
-  .missable:hover::before {
+  .tooltip:hover::before {
     opacity: 1;
     visibility: visible;
   }
