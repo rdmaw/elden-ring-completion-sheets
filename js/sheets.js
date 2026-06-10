@@ -1173,19 +1173,19 @@ for (let i = 0; i < linksLen; i++) {
     link.rel = 'noopener noreferrer';
 }
 
-let missableIsFocused = false;
+let tooltipIsFocused = false;
 
 document.addEventListener('pointerdown', event => {
-    if (event.target.classList.contains('missable')) {
-        missableIsFocused = document.activeElement === event.target;
+    if (event.target.classList.contains('tooltip')) {
+        tooltipIsFocused = document.activeElement === event.target;
     }
 });
 
 document.addEventListener('click', event => {
-    if (event.target.classList.contains('missable')) {
+    if (event.target.classList.contains('tooltip')) {
         event.preventDefault();
 
-        if (missableIsFocused) {
+        if (tooltipIsFocused) {
             event.target.blur();
         }
     }
