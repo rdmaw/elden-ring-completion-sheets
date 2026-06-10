@@ -380,7 +380,8 @@ input[type=checkbox] {
   border: 1px solid var(--trophy-border);
 }
 
-.missable {
+.missable,
+.missable .trophy {
   color: var(--red);
   background-color: oklch(from var(--background) l 0.05 40);
   border: 1px solid var(--red);

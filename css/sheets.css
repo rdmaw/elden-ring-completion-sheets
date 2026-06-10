@@ -165,7 +165,7 @@ button {
   color: var(--text);
   border: 1px solid oklch(from var(--background) 0.6 c h);
   border-radius: 4px;
-  box-shadow: 0 4px 12px oklch(from var(--nav) l c h / 0.7); 
+  box-shadow: 0 1px 4px oklch(from var(--nav) l c h / 0.7); 
   font-size: 0.85rem;
   font-weight: 400;
   text-wrap: wrap;
