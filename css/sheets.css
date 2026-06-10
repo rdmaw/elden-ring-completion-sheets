@@ -247,10 +247,6 @@ footer a:active {
     transition: transform 0.3s;
   }
 
-  .missable::before {
-    transition: opacity 0.05s, visibility 0.05s;
-  }
-
   #up-btn {
     transition: opacity 0.2s ease-out, transform 0.2s ease-out;
   }
