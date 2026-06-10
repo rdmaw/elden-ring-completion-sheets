@@ -244,7 +244,7 @@ li ul {
 }
 
 .badge {
-  margin-right: 0.4rem;
+  margin-inline: 0.1rem;
   padding: 0.1rem 0.2rem;
   color: var(--badge);
   background-color: oklch(from var(--background) l 0.005 220);
