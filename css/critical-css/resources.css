@@ -5,13 +5,12 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('/fonts/sheets.woff2') format('woff2');
+  src: url('/fonts/sheets.29a10b4354.woff2') format('woff2');
 }
 
 :root {
   color-scheme: light dark;
   font-family: sheets, system-ui, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
 }
 
 [data-theme=light] {
@@ -279,7 +278,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  font-feature-settings: 'liga' 1, 'calt' 1, 'tnum' 1;
+  font-feature-settings: 'tnum';
 }
 
 caption {
