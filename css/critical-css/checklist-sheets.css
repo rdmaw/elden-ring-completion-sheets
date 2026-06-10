@@ -52,7 +52,7 @@
   --done: oklch(0.48 0.1 155);
   --link: oklch(0.612 0.1 250);
   --red: oklch(0.631 0.15 25);
-  --badge: oklch(from var(--background) 0.85 0.02 220);
+  --badge: oklch(from var(--background) 0.85 0.03 220);
   --trophy: oklch(0.25 0.02 70);
   --trophy-border: oklch(0.75 0.1 70);
 
