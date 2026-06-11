@@ -4,19 +4,32 @@ This document lists all notable changes to Elden Ring Cheat Sheets with each dep
 
 Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
-<!-- ## 2026-06-02
+<!-- ## 2026-06-11
 
 ### Fixed
+- Hide info button removing missables from the walkthrough and other pages where it shouldn't.
 - Added missing SOTE tags to the table of content sections on the Weapons, Ashes, and Spells sheets.
 - Added missing SOTE tags to every item in the DLC Cookbooks section on the Key Items sheet.
+- Blurry corners on borders and outlines.
 
 ### Added
+- New DLC sections: Recluses' River, Abyssal Woods, Midra's Manse, and Jagged Peak.
+- Finished the following questlines: Igon, Florissax.
 - New missables: Companion Jar.
 - Notes on the Questlines sheet regarding the Radahn Festival skip for each questline affected.
+- Count Ymir boss; was missing from the Bosses sheet.
+- New visual badges for missables and optional steps.
+- With the introduction of visual badges: re-added all missables to Leyndell.
+- Missable tooltips now have a more subtle border and some shadows. 
+- To-Do history log in the README file (for nostalgic purposes).
 
 ### Changed
 - Renamed "Spiral Incantations" to "Hornsent Incantations" on the Spells sheet.
-- Updated and pinned GoatCounter to the newest version. -->
+- Updated and pinned GoatCounter to the newest version.
+- Decreased border radius on all buttons to 4px (from 5px). Buttons should look slightly less rounded.
+
+### Removed
+- Text like "Requires..." used for steps requiring Stonesword Keys and other prerequisites. These increase the length of sentences without adding much value. In-game you can tell by the Imp Seal how many keys are required, and the walkthrough is routed in a way that you shouldn't have to bother with counting or buying extras anyways. Steps that actually require an item have been given an additional step that collects these items beforehand instead of relying on a "Requires" text as a prerequisite. -->
 
 ## 2026-05-29
 
