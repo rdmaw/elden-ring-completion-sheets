@@ -4,7 +4,7 @@ This document lists all notable changes to Elden Ring Cheat Sheets with each dep
 
 Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
-<!-- ## 2026-06-11
+<!-- ## 2026-06-13
 
 ### Fixed
 - Hide info button removing missables from the walkthrough and other pages where it shouldn't.

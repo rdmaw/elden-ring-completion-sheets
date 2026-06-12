@@ -31,12 +31,12 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Abyssal Woods `(June 5, 080b70b)`
 - [x] Midra's Manse `(June 7, 564642e)`
 - [x] Jagged Peak `(June 8, af6bd48)`
-- [x] Style badges `(June 9, ed43b56)`
+- [x] Styled badges `(June 9, ed43b56)`
 - [ ] Rauh Ruins
 - [ ] Enir-Ilim
 
 <details>
-  <summary><h3>To-Do History</h3></summary>
+  <summary><h2>To-Do History</h2></summary>
   
   ### 2025
 
@@ -118,11 +118,11 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
   ### 2026
 
   - [x] Finish Weapons `(Jan 9, 5f4a3cd)`
-  - [x] Introduce sticky notes `(Jan 9, 4a15d3e)`
+  - [x] Introduce color notes `(Jan 9, 4a15d3e)`
   - [x] Finish Armor `(Jan 13, 4855a40)`
   - [x] Finish Ashes `(Jan 15, d38bf4c)`
   - [x] Finish Spells `(Jan 16, 09b986d)`
-  - [x] Add DLC tags for DLC-only items  `(Jan 20, 4181112)`
+  - [x] Create DLC tags for DLC-only items  `(Jan 20, 4181112)`
   - [x] Finish Key Items `(Jan 20, fb6f673)`
   - [x] Finish New Game Plus `(Jan 20, e8cb144)`
   - [x] Finish Talismans `(Jan 21, 64fff32)`
