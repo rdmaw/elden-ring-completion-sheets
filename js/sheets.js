@@ -822,7 +822,7 @@ const searchInput = document.getElementById('search');
 
 if (searchInput) {
     const walkthrough = document.getElementById('w-sheet');
-    const debounceDelay = walkthrough ? 60 : 20;
+    const debounceDelay = walkthrough ? 20 : 10;
 
     const headers = Array.from(document.querySelectorAll('main h3'));
 
@@ -1204,11 +1204,7 @@ window.addEventListener('pageshow', event => {
     setTheme(localStorage.getItem('theme') || 'system');
 
     if (hasCheckboxes) {
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                refreshCheckboxUI();
-            });
-        });
+        requestAnimationFrame(refreshCheckboxUI);
     }
 
     if (expandAllBtn) {
