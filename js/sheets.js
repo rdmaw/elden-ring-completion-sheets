@@ -898,6 +898,10 @@ if (searchInput) {
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => filter(event.target.value), debounceDelay);
     });
+
+    if (searchInput.value) {
+        filter(searchInput.value);
+    }
 }
 
 /* TOGGLE SIDEBAR
@@ -1000,6 +1004,7 @@ const shortcuts = {
         }
 
         searchInput.focus();
+        searchInput.select();
 
         announce('Search focused');
     },
