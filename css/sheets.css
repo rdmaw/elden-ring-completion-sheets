@@ -156,7 +156,7 @@ button {
   position: absolute;
   inset: auto auto 100% 0;
   max-width: min(26rem, 60vw);
-  padding: 0.35em 0.55em;
+  padding: 0.46em 0.65em;
   background-color: var(--search);
   color: var(--text);
   border: 1px solid oklch(from var(--background) 0.6 c h);
