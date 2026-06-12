@@ -3,7 +3,6 @@
 const PROFILES_KEY = 'eldenring-profiles';
 const DEFAULT_PROFILE = 'default';
 const PROFILE_TEMPLATE = { [DEFAULT_PROFILE]: { checked: {}, collapsed: {} } };
-
 const root = document.documentElement;
 
 let activeProfile = localStorage.getItem('active-profile') || DEFAULT_PROFILE;
@@ -27,12 +26,9 @@ function loadProfiles() {
         };
 
         localStorage.setItem(PROFILES_KEY, JSON.stringify(profiles));
-
         return profiles;
-
     } catch (error) {
         console.error('Error loading profiles:', error);
-
         return PROFILE_TEMPLATE;
     }
 }
@@ -54,7 +50,6 @@ const profile = {
     setChecked(id, checked) {
         if (checked) {
             profiles[activeProfile].checked[id] = 1;
-
         } else {
             delete profiles[activeProfile].checked[id];
         }
@@ -65,7 +60,6 @@ const profile = {
     setCollapsed(id, expanded) {
         if (expanded) {
             delete profiles[activeProfile].collapsed[id];
-
         } else {
             profiles[activeProfile].collapsed[id] = 1;
         }
@@ -82,7 +76,6 @@ const profile = {
 
             if (!expanded) {
                 profiles[activeProfile].collapsed[id] = 1;
-
                 continue;
             }
 
@@ -94,12 +87,10 @@ const profile = {
 
     switch(name) {
         const selectedProfile = name || DEFAULT_PROFILE;
-
         activeProfile = selectedProfile;
 
         if (selectedProfile === DEFAULT_PROFILE) {
             localStorage.removeItem('active-profile');
-
         } else {
             localStorage.setItem('active-profile', selectedProfile);
         }
@@ -172,17 +163,15 @@ const profile = {
             return {
                 success: false,
                 error: `What? This profile doesn't exist.`
-            }
+            };
         }
 
         // w = Walkthrough, d = DLC Walkthrough, n = NPC Walkthrough, q = Questlines, b = Bosses, p = New Game Plus
-        const sheetsToReset = new Set(['w', 'd', 'n', 'q', 'b', 'p'])
-
+        const sheetsToReset = new Set(['w', 'd', 'n', 'q', 'b', 'p']);
         const preservedData = Object.entries(profiles[name].checked)
             .filter(([id]) => !sheetsToReset.has(id.charAt(0)));
 
         profiles[name].checked = Object.fromEntries(preservedData);
-
         this.saveToStorage();
 
         return {
@@ -193,7 +182,6 @@ const profile = {
     delete(name) {
         if (name === DEFAULT_PROFILE) {
             profiles[DEFAULT_PROFILE] = { checked: {}, collapsed: {} };
-
             this.saveToStorage();
 
             return {
@@ -239,12 +227,9 @@ const profile = {
 
         if (data.current && data.current !== DEFAULT_PROFILE) {
             activeProfile = data.current;
-
             localStorage.setItem('active-profile', activeProfile);
-
         } else {
             activeProfile = DEFAULT_PROFILE;
-
             localStorage.removeItem('active-profile');
         }
 
@@ -282,10 +267,8 @@ if (dropdown) {
     const editBtn = document.getElementById('edit');
     const newGamePlusBtn = document.getElementById('new-game-plus');
     const deleteBtn = document.getElementById('delete');
-
     const exportFileBtn = document.getElementById('export-file');
     const exportClipboardBtn = document.getElementById('export-clipboard');
-
     const importFileBtn = document.getElementById('import-file');
     const importClipboardBtn = document.getElementById('import-clipboard');
 
@@ -302,7 +285,6 @@ if (dropdown) {
 
         if (!result.success) {
             alert(result.error);
-
             return;
         }
 
@@ -315,17 +297,14 @@ if (dropdown) {
 
         if (currentProfile === DEFAULT_PROFILE) {
             alert(`Can't edit the default profile.`);
-
             return;
         }
 
         const name = prompt(`Enter a new name for ${currentProfile}:`, currentProfile)?.trim();
-
         const result = profile.rename(currentProfile, name);
 
         if (!result.success) {
             alert(result.error);
-
             return;
         }
 
@@ -342,6 +321,7 @@ if (dropdown) {
 
         if (!result.success) {
             alert(result.error);
+            return;
         }
     });
 
@@ -356,7 +336,6 @@ if (dropdown) {
 
         if (!result.success) {
             alert(result.error);
-
             return;
         }
 
@@ -372,16 +351,12 @@ if (dropdown) {
 
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
-
             a.href = url;
             a.download = 'eldenring-progress.json';
             a.click();
-
             URL.revokeObjectURL(url);
-
         } catch (error) {
             alert('There was an error exporting the file.');
-
             console.error(error);
         }
     });
@@ -391,7 +366,6 @@ if (dropdown) {
     fileInput.type = 'file';
     fileInput.accept = '.json';
     fileInput.style.display = 'none';
-
     importFileBtn.after(fileInput);
 
     importFileBtn.addEventListener('click', () => {
@@ -402,23 +376,18 @@ if (dropdown) {
         try {
             const parsed = JSON.parse(data);
 
-            if (!confirm('Importing a new profile will overwrite all current data.')) {
-                return;
-            }
+            if (!confirm('Importing a new profile will overwrite all current data.')) return;
 
             const result = profile.importAll(parsed);
 
             if (result.success) {
                 refreshDropdown(dropdown, activeProfile);
-
                 alert('Successfully imported profile data.');
-
             } else {
                 alert(result.error);
             }
         } catch (error) {
             alert('Invalid profile data.');
-
             console.error(error);
         }
     }
@@ -430,12 +399,9 @@ if (dropdown) {
 
         try {
             const text = await file.text();
-
             handleProfileImport(text);
-
         } catch (error) {
             alert('Invalid profile data.');
-
             console.error(error);
         }
 
@@ -445,12 +411,9 @@ if (dropdown) {
     exportClipboardBtn.addEventListener('click', async () => {
         try {
             await navigator.clipboard.writeText(JSON.stringify(profile.exportAll(), null, 2));
-
             alert('Profile data has been copied to the clipboard.');
-
         } catch (error) {
             alert('There was an error copying to the clipboard.');
-
             console.error(error);
         }
     });
@@ -458,12 +421,9 @@ if (dropdown) {
     importClipboardBtn.addEventListener('click', async () => {
         try {
             const text = await navigator.clipboard.readText();
-
             handleProfileImport(text);
-
         } catch (error) {
             alert('Invalid clipboard data.');
-
             console.error(error);
         }
     });
@@ -477,7 +437,6 @@ let cachedProgress = null;
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const checkboxesLen = checkboxes.length;
 const hasCheckboxes = checkboxesLen > 0;
-
 const checkboxMap = new Map();
 
 function buildCheckboxMap() {
@@ -492,7 +451,6 @@ function buildCheckboxMap() {
 
 function setCheckboxState(checkbox, checked) {
     checkbox.checked = checked;
-
     const label = checkboxMap.get(checkbox);
 
     if (label) {
@@ -506,7 +464,6 @@ function restoreCheckboxes() {
     for (let i = 0; i < checkboxesLen; i++) {
         const checkbox = checkboxes[i];
         const isChecked = !!checked[checkbox.id];
-
         setCheckboxState(checkbox, isChecked);
     }
 }
@@ -539,7 +496,6 @@ function calculateChecklistProgress(checkboxes) {
     for (const checklistId in checklistProgress) {
         if (Object.hasOwn(checklistProgress, checklistId)) {
             const progress = checklistProgress[checklistId];
-
             progress.done = progress.checked === progress.total && progress.total > 0;
         }
     }
@@ -624,7 +580,6 @@ function updateChecklistProgress() {
 
         const progressBtns = document.querySelectorAll(`button[id^="${prefix}-c"]`);
         const progressBtnsLen = progressBtns.length;
-
         const navSpans = {};
 
         for (let i = 0; i < progressBtnsLen; i++) {
@@ -687,7 +642,6 @@ if (hasCheckboxes) {
 
             setCheckboxState(checkbox, checkbox.checked);
             profile.setChecked(checkbox.id, checkbox.checked);
-
             updateChecklistProgress();
         }
     });
@@ -704,7 +658,6 @@ if (hasCheckboxes) {
 const collapseBtns = document.querySelectorAll('.collapse-btn');
 const expandAllBtn = document.getElementById('expand-all');
 const collapseAllBtn = document.getElementById('collapse-all');
-
 const checklistMap = new Map();
 
 function setCollapseState(btn, checklist, expanded) {
@@ -722,8 +675,7 @@ function setupCollapseUI() {
         if (!checklist) continue;
 
         const isCollapsed = !!profiles[activeProfile].collapsed[checklistId];
-
-        setCollapseState(btn, checklist, !isCollapsed)
+        setCollapseState(btn, checklist, !isCollapsed);
 
         if (!collapseInitialized) {
             btn.addEventListener('click', () => {
@@ -740,9 +692,7 @@ function setupCollapseUI() {
     }
 
     collapseInitialized = true;
-
-    // Clean up style tag injected by inline script.
-    document.getElementById('fouc')?.remove();
+    document.getElementById('fouc')?.remove(); // Clean up style tag injected by inline script.
 }
 
 function setAllChecklists(expanded) {
@@ -752,7 +702,6 @@ function setAllChecklists(expanded) {
         setCollapseState(btn, checklist, expanded);
 
         const checklistId = btn.getAttribute('aria-controls');
-
         updates.push({ id: checklistId, expanded });
     }
 
@@ -786,13 +735,12 @@ function updateCompactUI(isCompact) {
 
 if (compactBtn) {
     const isCompact = root.classList.contains('compact-checklists');
-
     updateCompactUI(isCompact);
 
     compactBtn.addEventListener('click', () => {
         const isCompact = !root.classList.contains('compact-checklists');
-
         updateCompactUI(isCompact);
+
         localStorage.setItem('compact-checklists', String(isCompact));
     });
 }
@@ -823,13 +771,11 @@ const searchInput = document.getElementById('search');
 if (searchInput) {
     const walkthrough = document.getElementById('w-sheet');
     const debounceDelay = walkthrough ? 20 : 10;
-
     const headers = Array.from(document.querySelectorAll('main h3'));
 
     const cachedSections = headers.map(header => {
         const checklist = header.nextElementSibling;
         const steps = Array.from(checklist.children);
-
         const headerText = header.textContent.toLowerCase();
         const stepTexts = steps.map(step => step.textContent.toLowerCase());
 
@@ -855,7 +801,6 @@ if (searchInput) {
         if (search === lastSearch) return;
 
         lastSearch = search;
-
         const queries = search.split(/\s+/).filter(Boolean);
         const searching = queries.length > 0;
         const cachedSectionsLen = cachedSections.length;
@@ -876,11 +821,9 @@ if (searchInput) {
                 }
 
                 hasVisibleStep = true;
-
             } else {
                 for (let j = 0; j < stepsLen; j++) {
                     const match = !searching || matchesQuery(stepTexts[j], queries);
-
                     setDisplayProperty(steps[j], match ? '' : 'none');
 
                     if (match) {
@@ -922,7 +865,6 @@ function openSidebar() {
     sidebar.ariaHidden = 'false';
     sidebar.inert = false;
     menuBtn.ariaExpanded = 'true';
-
     announce('Sidebar opened');
     closeBtn.focus();
 }
@@ -932,20 +874,17 @@ function closeSidebar() {
 
     if (focusingSidebar) {
         const target = lastFocusedElement;
-
         target.focus({ preventScroll: true });
     }
 
     sidebar.ariaHidden = 'true';
     sidebar.inert = true;
     menuBtn.ariaExpanded = 'false';
-
     announce('Sidebar closed');
 }
 
 function toggleSidebar() {
     const hidden = sidebar.ariaHidden === 'true';
-
     hidden ? openSidebar() : closeSidebar();
 }
 
@@ -989,7 +928,6 @@ const shortcuts = {
     escape: () => {
         if (sidebar.ariaHidden === 'false') {
             closeSidebar();
-
             announce('Sidebar closed');
         }
     },
@@ -1005,7 +943,6 @@ const shortcuts = {
 
         searchInput.focus();
         searchInput.select();
-
         announce('Search focused');
     },
 
@@ -1015,7 +952,6 @@ const shortcuts = {
         }
 
         hideBtn.click();
-
         announce(root.classList.contains('hide-checked') ? 'Hiding checked steps' : 'Showing checked steps');
     },
 
@@ -1026,7 +962,6 @@ const shortcuts = {
 
         window.scrollTo({ top: 0 });
         menuBtn.focus();
-
         announce('Scrolled to top');
     }
 }
@@ -1041,7 +976,6 @@ document.addEventListener('keydown', event => {
 
     if (action && !event.ctrlKey && !event.metaKey) {
         event.preventDefault();
-
         action();
     }
 });
@@ -1055,18 +989,15 @@ const activeTheme = preferredTheme || 'system';
 function setTheme(theme) {
     if (theme === 'light') {
         root.setAttribute('data-theme', 'light');
-
         return;
     }
 
     if (theme === 'dark') {
         root.setAttribute('data-theme', 'dark');
-
         return;
     }
 
     const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
     root.setAttribute('data-theme', isSystemDark ? 'dark' : 'light');
 }
 
@@ -1106,13 +1037,11 @@ window.addEventListener('storage', event => {
 
     if (event.key === 'compact-checklists') {
         updateCompactUI(event.newValue === 'true');
-
         return;
     }
 
     if (event.key === 'hide-checked') {
         const isHidden = event.newValue === 'true';
-
         root.classList.toggle('hide-checked', isHidden);
 
         if (hideBtn) {
@@ -1125,7 +1054,6 @@ window.addEventListener('storage', event => {
     if (event.key === PROFILES_KEY) {
         try {
             profiles = JSON.parse(event.newValue);
-
             ensureProfileExists();
 
             if (hasCheckboxes) {
@@ -1173,7 +1101,6 @@ const linksLen = links.length;
 
 for (let i = 0; i < linksLen; i++) {
     const link = links[i];
-
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
 }
@@ -1203,7 +1130,6 @@ window.addEventListener('pageshow', event => {
 
     activeProfile = localStorage.getItem('active-profile') || DEFAULT_PROFILE;
     profiles = loadProfiles();
-
     ensureProfileExists();
 
     setTheme(localStorage.getItem('theme') || 'system');
