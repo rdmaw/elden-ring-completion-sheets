@@ -354,7 +354,7 @@ li {
 
 .note {
   margin: 0.5rem 0 0.5rem 0.2rem;
-  padding: 0.7rem 1.3rem;
+  padding: 0.6rem 1.3rem;
   color: var(--note-text);
   background-color: var(--note-bg);
   border-left: 7px solid var(--note-border);
