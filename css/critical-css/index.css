@@ -265,11 +265,11 @@ li ul {
   border: 1px solid var(--trophy-border);
 }
 
-.missable,
-.missable .trophy {
+.missable {
   color: var(--red);
   background-color: oklch(from var(--background) l 0.05 40);
   border: 1px solid var(--red);
+  cursor: pointer;
 }
 
 .btn {
