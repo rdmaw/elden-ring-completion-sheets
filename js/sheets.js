@@ -841,7 +841,7 @@ if (searchInput) {
         filter(value);
     });
 
-    storedSearch = sessionStorage.getItem('search');
+    const storedSearch = sessionStorage.getItem('search');
 
     if (storedSearch) {
         searchInput.value = storedSearch;
@@ -1075,7 +1075,6 @@ window.addEventListener('storage', event => {
             if (expandAllBtn) {
                 setupCollapseUI();
             }
-
         } catch (error) {
             console.error('Error syncing profile:', error);
         }
