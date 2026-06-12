@@ -352,7 +352,7 @@ li {
   position: relative;
 }
 
-.top-note {
+.note {
   margin: 0.5rem 0 0.5rem 0.2rem;
   padding: 0.7rem 1.3rem;
   color: var(--note-text);
@@ -416,7 +416,7 @@ kbd {
 /* MEDIA QUERIES
 ---------------- */
 @media (min-width: 37.5em) {
-  .top-note {
+  .note {
     margin-left: 1rem;
   }
 
