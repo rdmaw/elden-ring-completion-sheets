@@ -150,10 +150,6 @@ button {
   filter: brightness(1.1);
 }
 
-.tooltip {
-  cursor: help;
-}
-
 .tooltip::before {
   content: attr(data-tooltip);
   pointer-events: none;
@@ -311,17 +307,21 @@ footer a:active {
     --red: #000;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   #skip-link,
   nav,
   #search,
   button,
-  .badge,
   abbr {
     display: none !important;
+  }
+
+  strong,
+  .note::before {
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   label {
@@ -331,5 +331,15 @@ footer a:active {
 
   input[type=checkbox] {
     left: 0;
+  }
+
+  .note {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .note::before {
+    content: 'Note: ';
   }
 }
