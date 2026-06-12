@@ -18,15 +18,16 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - New missables: Companion Jar.
 - Notes on the Questlines sheet regarding the Radahn Festival skip for each questline affected.
 - Count Ymir boss; was missing from the Bosses sheet.
-- New visual badges for missables and optional steps.
+- New visual badges for missables, optional, and achievement steps.
 - With the introduction of visual badges: re-added all missables to Leyndell.
-- Missable tooltips now have a more subtle border and some shadows. 
+- Tooltip shadows and made the border more subtle. 
+- Styled the top-notes to make them stand out as notes.
 - To-Do history log in the README file (for nostalgic purposes).
 
 ### Changed
 - Renamed "Spiral Incantations" to "Hornsent Incantations" on the Spells sheet.
 - Updated and pinned GoatCounter to the newest version.
-- Decreased border radius on all buttons to 4px (from 5px). Buttons should look slightly less rounded.
+- Decreased border radius on all buttons. They should now look slightly less rounded.
 
 ### Removed
 - Text like "Requires..." used for steps requiring Stonesword Keys and other prerequisites. These increase the length of sentences without adding much value. In-game you can tell by the Imp Seal how many keys are required, and the walkthrough is routed in a way that you shouldn't have to bother with counting or buying extras anyways. Steps that actually require an item have been given an additional step that collects these items beforehand instead of relying on a "Requires" text as a prerequisite. -->
