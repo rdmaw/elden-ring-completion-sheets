@@ -769,8 +769,6 @@ if (hideBtn) {
 const searchInput = document.getElementById('search');
 
 if (searchInput) {
-    const walkthrough = document.getElementById('w-sheet');
-    const debounceDelay = walkthrough ? 20 : 10;
     const headers = Array.from(document.querySelectorAll('main h3'));
 
     const cachedSections = headers.map(header => {
@@ -782,7 +780,6 @@ if (searchInput) {
         return { header, checklist, steps, headerText, stepTexts };
     });
 
-    let debounceTimer;
     let lastSearch = null;
 
     function matchesQuery(text, queries) {
@@ -838,12 +835,17 @@ if (searchInput) {
     }
 
     searchInput.addEventListener('input', event => {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => filter(event.target.value), debounceDelay);
+        const value = event.target.value;
+        sessionStorage.setItem('search', value);
+
+        filter(value);
     });
 
-    if (searchInput.value) {
-        filter(searchInput.value);
+    storedSearch = sessionStorage.getItem('search');
+
+    if (storedSearch) {
+        searchInput.value = storedSearch;
+        filter(storedSearch);
     }
 }
 
