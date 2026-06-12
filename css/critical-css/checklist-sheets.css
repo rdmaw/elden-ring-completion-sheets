@@ -35,8 +35,8 @@
   --note-border: var(--nav);
 
   --badge: oklch(0.45 0.02 220);
-  --trophy: oklch(0.97 0.05 90);
-  --trophy-border: oklch(0.65 0.20 90);
+  --trophy: oklch(0.98 0.04 80);
+  --trophy-border: oklch(0.65 0.2 80);
 
   --strong: 550;
 }
