@@ -872,6 +872,8 @@ function openSidebar() {
 }
 
 function closeSidebar() {
+    if (sidebar.ariaHidden === 'true') return;
+
     const focusingSidebar = sidebar.contains(document.activeElement);
 
     if (focusingSidebar) {
@@ -926,60 +928,46 @@ function announce(text) {
     }
 }
 
+function focusSearch() {
+    if (!searchInput) return;
+
+    searchInput.focus();
+    searchInput.select();
+    announce('Search focused');
+}
+
+function hideSteps() {
+    if (!hideBtn) return;
+
+    hideBtn.click();
+    announce(root.classList.contains('hide-checked') ? 'Hiding checked steps' : 'Showing checked steps');
+}
+
+function scrollTop() {
+    if (!upBtn) return;
+
+    window.scrollTo({ top: 0 });
+    menuBtn.focus();
+    announce('Scrolled to top');
+}
+
 const shortcuts = {
-    escape: () => {
-        if (sidebar.ariaHidden === 'false') {
-            closeSidebar();
-            announce('Sidebar closed');
-        }
-    },
-
-    s: () => {
-        toggleSidebar();
-    },
-
-    '/': () => {
-        if (!searchInput) {
-            return;
-        }
-
-        searchInput.focus();
-        searchInput.select();
-        announce('Search focused');
-    },
-
-    h: () => {
-        if (!hideBtn) {
-            return;
-        }
-
-        hideBtn.click();
-        announce(root.classList.contains('hide-checked') ? 'Hiding checked steps' : 'Showing checked steps');
-    },
-
-    t: () => {
-        if (!upBtn) {
-            return;
-        }
-
-        window.scrollTo({ top: 0 });
-        menuBtn.focus();
-        announce('Scrolled to top');
-    }
+    escape: closeSidebar,
+    s: toggleSidebar,
+    '/': focusSearch,
+    h: hideSteps,
+    t: scrollTop
 }
 
 document.addEventListener('keydown', event => {
-    const active = document.activeElement;
-    const userIsTyping = active.tagName === 'INPUT';
-
-    if (userIsTyping) return;
+    if (document.activeElement === searchInput) return;
 
     const action = shortcuts[event.key.toLowerCase()];
 
-    if (action && !event.ctrlKey && !event.metaKey) {
-        event.preventDefault();
-        action();
-    }
+    if (!action || event.ctrlKey || event.metaKey) return;
+
+    event.preventDefault();
+    action();
 });
 
 /* COLOR THEME

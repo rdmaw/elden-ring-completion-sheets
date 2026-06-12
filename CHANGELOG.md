@@ -11,6 +11,9 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Added missing SOTE tags to the table of content sections on the Weapons, Ashes, and Spells sheets.
 - Added missing SOTE tags to every item in the DLC Cookbooks section on the Key Items sheet.
 - Blurry corners on borders and outlines.
+- Searched word is now kept and filtered across reloads.
+- Backslash shortcut now properly selects the current search words if there are any.
+- Backslash shortcut now correctly goes to the search bar if a checkbox is focused.
 
 ### Added
 - New DLC sections: Recluses' River, Abyssal Woods, Midra's Manse, and Jagged Peak.
