@@ -21,10 +21,11 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - New visual badges for missables, optional, and achievement steps.
 - With the introduction of visual badges: re-added all missables to Leyndell.
 - Tooltip shadows and made the border more subtle. 
-- Styled the top-notes to make them stand out as notes.
+- Styled the top-level notes to make them stand out.
 - To-Do history log in the README file (for nostalgic purposes).
 
 ### Changed
+- Turned achievement notes into achievement steps.
 - Renamed "Spiral Incantations" to "Hornsent Incantations" on the Spells sheet.
 - Updated and pinned GoatCounter to the newest version.
 - Decreased border radius on all buttons. They should now look slightly less rounded.
