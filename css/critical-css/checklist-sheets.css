@@ -142,7 +142,7 @@ strong {
 
 #search,
 .btn {
-  color: inherit;
+  color: var(--text);
   border-radius: 4px;
   font-family: inherit;
   font-size: inherit;
@@ -244,10 +244,7 @@ header {
   margin-bottom: 1.75rem;
   background: none;
   border-bottom: none;
-}
-
-#toc a {
-  color: var(--text);
+  font-weight: 400;
 }
 
 nav span,

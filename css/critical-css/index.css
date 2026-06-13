@@ -275,7 +275,7 @@ li ul {
 .btn {
   padding: 0.25rem 0.5rem;
   background-color: var(--button);
-  color: inherit;
+  color: var(--text);
   border-radius: 4px;
 }
 

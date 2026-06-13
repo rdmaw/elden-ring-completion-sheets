@@ -91,7 +91,7 @@ input[type=checkbox] {
   width: 2.375rem;
   height: 2.125rem;
   background: none;
-  color: inherit;
+  color: var(--nav-text);
   border: none;
 }
 

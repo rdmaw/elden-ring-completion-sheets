@@ -219,10 +219,7 @@ header {
   margin-bottom: 1.75rem;
   background: none;
   border-bottom: none;
-}
-
-#toc a {
-  color: var(--text);
+  font-weight: 400;
 }
 
 #filter {
@@ -235,7 +232,7 @@ header {
   height: 2rem;
   padding: 0.25rem 0.5rem;
   background-color: var(--button);
-  color: inherit;
+  color: var(--text);
   border: 1px solid var(--nav-border);
   border-radius: 4px;
   font-family: inherit;

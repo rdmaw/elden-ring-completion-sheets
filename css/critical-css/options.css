@@ -93,7 +93,7 @@ h3 {
 
 select,
 .btn {
-  color: inherit;
+  color: var(--text);
   border-radius: 4px;
   font-family: inherit;
   font-size: inherit;
