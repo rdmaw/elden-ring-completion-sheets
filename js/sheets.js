@@ -19,7 +19,6 @@ function ensureProfileExists() {
 function loadProfiles() {
     try {
         const profiles = JSON.parse(localStorage.getItem(PROFILES_KEY)) ?? PROFILE_TEMPLATE;
-
         profiles[DEFAULT_PROFILE] = {
             ...PROFILE_TEMPLATE[DEFAULT_PROFILE],
             ...profiles[DEFAULT_PROFILE]
@@ -41,9 +40,7 @@ const profile = {
     list() {
         return [
             DEFAULT_PROFILE,
-            ...Object.keys(profiles)
-                .filter(name => name !== DEFAULT_PROFILE)
-                .sort()
+            ...Object.keys(profiles).filter(name => name !== DEFAULT_PROFILE).sort()
         ];
     },
 
@@ -67,7 +64,7 @@ const profile = {
         this.saveToStorage();
     },
 
-    // Collapse/Expand all: Batch all updates to a single write. Chrome may drop spammy localStorage writes. See #8.
+    // Batch collapse/expand updates. Chrome may drop spammy localStorage writes (fixes #8).
     setCollapsedBatch(updates) {
         const updatesLen = updates.length;
 
@@ -81,7 +78,6 @@ const profile = {
 
             delete profiles[activeProfile].collapsed[id];
         }
-
         this.saveToStorage();
     },
 
@@ -252,11 +248,7 @@ function createOptions(profiles) {
 
 function refreshDropdown(dropdown, activeProfile) {
     const profiles = profile.list();
-
-    dropdown.replaceChildren(
-        ...createOptions(profiles)
-    );
-
+    dropdown.replaceChildren(...createOptions(profiles));
     dropdown.value = activeProfile;
 }
 
@@ -278,11 +270,9 @@ if (dropdown) {
 
     createBtn.addEventListener('click', () => {
         const name = prompt('Enter a name for the profile:')?.trim();
-
         if (!name) return;
 
         const result = profile.create(name);
-
         if (!result.success) {
             alert(result.error);
             return;
@@ -301,8 +291,8 @@ if (dropdown) {
         }
 
         const name = prompt(`Enter a new name for ${currentProfile}:`, currentProfile)?.trim();
-        const result = profile.rename(currentProfile, name);
 
+        const result = profile.rename(currentProfile, name);
         if (!result.success) {
             alert(result.error);
             return;
@@ -318,7 +308,6 @@ if (dropdown) {
         if (!confirm(`Reset progress for ${profileName} in Walkthrough, DLC-Walkthrough, NPC-Walkthrough, Questlines, Bosses, and New Game Plus? Progress on other sheets will not be affected.`)) return;
 
         const result = profile.resetToNGPlus(currentProfile);
-
         if (!result.success) {
             alert(result.error);
             return;
@@ -333,7 +322,6 @@ if (dropdown) {
         if (!confirm(`Are you sure you want to ${action}?`)) return;
 
         const result = profile.delete(currentProfile);
-
         if (!result.success) {
             alert(result.error);
             return;
@@ -379,7 +367,6 @@ if (dropdown) {
             if (!confirm('Importing a new profile will overwrite all current data.')) return;
 
             const result = profile.importAll(parsed);
-
             if (result.success) {
                 refreshDropdown(dropdown, activeProfile);
                 alert('Successfully imported profile data.');
@@ -394,7 +381,6 @@ if (dropdown) {
 
     fileInput.addEventListener('change', async event => {
         const file = event.target.files[0];
-
         if (!file) return;
 
         try {
@@ -451,8 +437,8 @@ function buildCheckboxMap() {
 
 function setCheckboxState(checkbox, checked) {
     checkbox.checked = checked;
-    const label = checkboxMap.get(checkbox);
 
+    const label = checkboxMap.get(checkbox);
     if (label) {
         label.classList.toggle('checked', checked);
     }
@@ -475,12 +461,11 @@ function calculateChecklistProgress(checkboxes) {
     for (let i = 0; i < checkboxesLen; i++) {
         const checkbox = checkboxes[i];
         const checkboxId = checkbox.id;
-        const hyphenIndex = checkboxId.indexOf('-', idStart);
 
+        const hyphenIndex = checkboxId.indexOf('-', idStart);
         if (hyphenIndex === -1) continue;
 
         const checklistId = checkboxId.substring(idStart, hyphenIndex);
-
         if (!checklistProgress[checklistId]) {
             checklistProgress[checklistId] = { checked: 0, total: 0, done: false };
         }
@@ -505,11 +490,9 @@ function calculateChecklistProgress(checkboxes) {
 
 function getProgressId(id) {
     const hyphenIndex = id.indexOf('-');
-
     if (hyphenIndex === -1) return '';
 
     const checklistId = id.substring(hyphenIndex + 1);
-
     if (checklistId.length < 2 || (checklistId[0] !== 'c' && checklistId[0] !== 'n')) {
         return '';
     }
@@ -523,7 +506,6 @@ function updateProgress(checklistProgress, progressBtns, navSpans) {
     for (let i = 0; i < progressBtnsLen; i++) {
         const progressBtn = progressBtns[i];
         const checklistId = getProgressId(progressBtn.id);
-
         if (!checklistId) continue;
 
         const progress = checklistProgress[checklistId] || { checked: 0, total: 0, done: false };
@@ -534,7 +516,6 @@ function updateProgress(checklistProgress, progressBtns, navSpans) {
         progressBtn.ariaLabel = progress.done ? 'Uncheck all' : 'Check all';
 
         const navSpan = navSpans[checklistId];
-
         if (navSpan) {
             navSpan.classList.toggle('done', progress.done);
             navSpan.textContent = text;
@@ -551,7 +532,6 @@ function updateCurrentProgress(checklistProgress, totalSpan) {
     for (const checklistId in checklistProgress) {
         if (Object.hasOwn(checklistProgress, checklistId)) {
             const progress = checklistProgress[checklistId];
-
             checked += progress.checked;
             total += progress.total;
         }
@@ -559,7 +539,6 @@ function updateCurrentProgress(checklistProgress, totalSpan) {
 
     const text = total ? (checked === total ? 'DONE' : `${checked}/${total}`) : '0/0';
     const done = checked === total && total > 0;
-
     totalSpan.classList.remove('done');
     totalSpan.textContent = text;
 
@@ -590,13 +569,11 @@ function updateChecklistProgress() {
                 navSpans[checklistId] = document.getElementById(`${prefix}-n${checklistId}`);
             }
         }
-
         cachedProgress = { totalSpan, progressBtns, navSpans };
     }
 
     const { totalSpan, progressBtns, navSpans } = cachedProgress;
     const checklistProgress = calculateChecklistProgress(checkboxes);
-
     updateProgress(checklistProgress, progressBtns, navSpans);
     updateCurrentProgress(checklistProgress, totalSpan);
 }
@@ -614,11 +591,9 @@ if (hasCheckboxes) {
         for (let i = 0; i < checkboxesLen; i++) {
             const checkbox = checkboxes[i];
             const hyphenIndex = checkbox.id.indexOf('-', 1);
-
             if (hyphenIndex === -1) continue;
 
             const checklist = checkbox.id.substring(1, hyphenIndex);
-
             if (checklist === checklistId && checkbox.checked !== checked) {
                 setCheckboxState(checkbox, checked);
                 profile.setChecked(checkbox.id, checked);
@@ -630,7 +605,6 @@ if (hasCheckboxes) {
 
     function handleCheckAll(progressBtn) {
         const checklistId = getProgressId(progressBtn.id);
-
         if (checklistId) {
             setAll(checklistId, !progressBtn.classList.contains('done'));
         }
@@ -671,7 +645,6 @@ function setupCollapseUI() {
     for (const btn of collapseBtns) {
         const checklistId = btn.getAttribute('aria-controls');
         const checklist = document.getElementById(checklistId);
-
         if (!checklist) continue;
 
         const isCollapsed = !!profiles[activeProfile].collapsed[checklistId];
@@ -690,7 +663,6 @@ function setupCollapseUI() {
             }
         }
     }
-
     collapseInitialized = true;
     document.getElementById('fouc')?.remove(); // Clean up style tag injected by inline script.
 }
@@ -740,7 +712,6 @@ if (compactBtn) {
     compactBtn.addEventListener('click', () => {
         const isCompact = !root.classList.contains('compact-checklists');
         updateCompactUI(isCompact);
-
         localStorage.setItem('compact-checklists', String(isCompact));
     });
 }
@@ -759,7 +730,6 @@ if (hideBtn) {
 
         root.classList.toggle('hide-checked', isHidden);
         hideBtn.ariaPressed = String(isHidden);
-
         localStorage.setItem('hide-checked', String(isHidden));
     });
 }
@@ -794,10 +764,9 @@ if (searchInput) {
 
     function filter(query) {
         const search = query.toLowerCase().trim();
-
         if (search === lastSearch) return;
-
         lastSearch = search;
+
         const queries = search.split(/\s+/).filter(Boolean);
         const searching = queries.length > 0;
         const cachedSectionsLen = cachedSections.length;
@@ -828,7 +797,6 @@ if (searchInput) {
                     }
                 }
             }
-
             setDisplayProperty(header, hasVisibleStep ? '' : 'none');
             setDisplayProperty(checklist, hasVisibleStep ? '' : 'none');
         }
@@ -837,12 +805,10 @@ if (searchInput) {
     searchInput.addEventListener('input', event => {
         const value = event.target.value;
         sessionStorage.setItem('search', value);
-
         filter(value);
     });
 
     const storedSearch = sessionStorage.getItem('search');
-
     if (storedSearch) {
         searchInput.value = storedSearch;
         filter(storedSearch);
@@ -859,7 +825,6 @@ let lastFocusedElement = menuBtn;
 
 function openSidebar() {
     const active = document.activeElement;
-
     if (active && active !== document.body && typeof active.focus === 'function') {
         lastFocusedElement = active;
     }
@@ -875,7 +840,6 @@ function closeSidebar() {
     if (sidebar.ariaHidden === 'true') return;
 
     const focusingSidebar = sidebar.contains(document.activeElement);
-
     if (focusingSidebar) {
         const target = lastFocusedElement;
         target.focus({ preventScroll: true });
@@ -903,7 +867,6 @@ const scroll = document.getElementById('scroll-observer');
 if (upBtn && scroll) {
     const observer = new IntersectionObserver(([entry]) => {
             const show = !entry.isIntersecting;
-
             upBtn.classList.toggle('show', show);
             upBtn.ariaHidden = show ? 'false' : 'true';
             upBtn.tabIndex = show ? 0 : -1;
@@ -922,7 +885,6 @@ if (upBtn && scroll) {
 --------------------- */
 function announce(text) {
     const announcer = document.getElementById('announcer');
-
     if (announcer) {
         announcer.textContent = text;
     }
@@ -963,7 +925,6 @@ document.addEventListener('keydown', event => {
     if (document.activeElement === searchInput) return;
 
     const action = shortcuts[event.key.toLowerCase()];
-
     if (!action || event.ctrlKey || event.metaKey) return;
 
     event.preventDefault();
@@ -998,7 +959,6 @@ if (themeSelect) {
 
     themeSelect.addEventListener('change', () => {
         const value = themeSelect.value;
-
         localStorage.setItem('theme', value);
         setTheme(value);
     });
@@ -1006,7 +966,6 @@ if (themeSelect) {
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     const storedTheme = localStorage.getItem('theme') || 'system';
-
     if (storedTheme === 'system') {
         setTheme('system');
     }
