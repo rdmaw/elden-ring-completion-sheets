@@ -39,6 +39,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
   <summary><h2>To-Do History</h2></summary>
   
   ### 2025
+
   - [x] Tutorial `(Jan 10, 8149fb2)`
   - [x] Resources `(Jan 16, c9a7120)`
   - [x] First steps in Limgrave `(Jan 18, 1fb0d51)`
