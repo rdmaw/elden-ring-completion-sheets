@@ -12,6 +12,10 @@
 
 /* DEFAULTS
 ----------- */
+html {
+  --webkit-tap-highlight-color: transparent;
+}
+
 svg {
   display: block;
 }
@@ -197,19 +201,18 @@ footer a:active {
 }
 
 #up-btn {
+  pointer-events: none;
   position: fixed;
-  inset: auto 1.25rem 1.25rem auto;
+  inset: auto 1rem 1rem auto;
   height: auto;
   padding: 0.5rem;
   border: 2px solid var(--nav-border);
   border-radius: 50%;
-  opacity: 0;
-  transform: translateY(6.25rem);
 }
 
 #up-btn.show {
+  pointer-events: auto;
   opacity: 1;
-  transform: translateY(0);
 }
 
 #up-arrow {
@@ -217,7 +220,7 @@ footer a:active {
   height: 1.75rem;
 }
 
-#scroll-observer {
+#scroll-sentinel {
   pointer-events: none;
   width: 1px;
   height: 1px;
@@ -244,7 +247,7 @@ footer a:active {
   }
 
   #up-btn {
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    transition: opacity 0.2s ease;
   }
 }
 

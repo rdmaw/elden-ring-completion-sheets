@@ -862,16 +862,15 @@ closeBtn.addEventListener('click', toggleSidebar);
 /* SCROLL TO TOP
 ---------------- */
 const upBtn = document.getElementById('up-btn');
-const scroll = document.getElementById('scroll-observer');
+const scroll = document.getElementById('scroll-sentinel');
 
 if (upBtn && scroll) {
     const observer = new IntersectionObserver(([entry]) => {
-            const show = !entry.isIntersecting;
-            upBtn.classList.toggle('show', show);
-            upBtn.ariaHidden = show ? 'false' : 'true';
-            upBtn.tabIndex = show ? 0 : -1;
-        }
-    );
+        const show = !entry.isIntersecting;
+
+        upBtn.classList.toggle('show', show);
+        upBtn.tabIndex = show ? 0 : -1;
+    }, { rootMargin: '100% 0px 0px 0px' });
 
     observer.observe(scroll);
 
