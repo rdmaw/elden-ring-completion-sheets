@@ -219,6 +219,9 @@ header {
   margin-bottom: 1.75rem;
   background: none;
   border-bottom: none;
+}
+
+#toc a {
   font-weight: 400;
 }
 
