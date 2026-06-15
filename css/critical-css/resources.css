@@ -17,6 +17,7 @@
   color-scheme: light;
   --background: oklch(0.99 0.012 90);
   --text: oklch(from var(--background) 0.2 0.005 h);
+  --search: oklch(from var(--background) l 0 h);
   --button: oklch(from var(--background) calc(l - 0.03) calc(c - 0.010) h);
 
   --nav: oklch(0.72 0.038 90);
@@ -33,6 +34,7 @@
   color-scheme: dark;
   --background: oklch(0.23 0.002 200);
   --text: oklch(from var(--background) 0.926 c h);
+  --search: oklch(from var(--background) calc(l + 0.09) c h);
   --button: oklch(from var(--background) calc(l + 0.11) c h);
 
   --nav: oklch(from var(--background) calc(l + 0.05) c h);
@@ -111,12 +113,21 @@ h3 {
 h2,
 h3,
 h4,
-caption {
-  font-weight: 450;
+caption,
+nav a {
+  font-weight: 500;
 }
 
 strong {
   font-weight: var(--strong);
+}
+
+#search,
+.btn {
+  color: var(--text);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 header,
@@ -143,10 +154,6 @@ nav {
   display: flex;
   background-color: var(--nav);
   border-bottom: 2px solid var(--nav-border);
-}
-
-nav a {
-  font-weight: 500;
 }
 
 .nav {
@@ -226,8 +233,21 @@ header {
   border-bottom: none;
 }
 
+#toc-list {
+  margin-top: 0.5rem;
+}
+
 #toc a {
   font-weight: 400;
+}
+
+#search {
+  width: 100%;
+  height: 2.375rem;
+  margin-bottom: 0.75rem;
+  padding-inline: 0.5em;
+  background-color: var(--search);
+  border: 1px solid oklch(from var(--nav-border) l c h / 0.6);
 }
 
 #filter {
@@ -240,11 +260,7 @@ header {
   height: 2rem;
   padding: 0.25rem 0.5rem;
   background-color: var(--button);
-  color: var(--text);
   border: 1px solid var(--nav-border);
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: inherit;
 }
 
 .collapse-btn {
@@ -334,6 +350,6 @@ ul {
   th,
   td {
     padding: 0.75rem;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 }

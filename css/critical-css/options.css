@@ -72,10 +72,16 @@ h1 {
 
 h2 {
   margin-top: 1rem;
+  font-size: 1.3125rem;
 }
 
 h3 {
   margin-block: 1.5rem 0.75rem;
+  font-size: 1.3125rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -85,9 +91,9 @@ a {
 /* SHARED
 --------- */
 h2,
-h3 {
-  font-size: 1.3125rem;
-  font-weight: 450;
+h3,
+nav a {
+  font-weight: 500;
 }
 
 select,
@@ -109,10 +115,6 @@ nav {
   display: flex;
   background-color: var(--nav);
   border-bottom: 2px solid var(--nav-border);
-}
-
-nav a {
-  font-weight: 500;
 }
 
 .nav {

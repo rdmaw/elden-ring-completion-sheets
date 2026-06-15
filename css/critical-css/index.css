@@ -46,7 +46,7 @@
   --nav-text: oklch(from var(--nav) calc(l + 0.65) c h);
   --nav-border: oklch(from var(--nav) calc(l + 0.25) c h);
 
-  --done: oklch(0.48 0.1 155);
+  --done: oklch(0.631 0.15 155);
   --link: oklch(0.612 0.1 250);
   --red: oklch(0.631 0.15 25);
 
@@ -128,8 +128,14 @@ a {
 h2,
 h3 {
   font-size: 1.3125rem;
-  font-weight: 450;
   line-height: 1.2;
+}
+
+h2,
+h3,
+h4,
+nav a {
+  font-weight: 500;
 }
 
 .list,
@@ -158,10 +164,6 @@ nav {
   display: flex;
   background-color: var(--nav);
   border-bottom: 2px solid var(--nav-border);
-}
-
-nav a {
-  font-weight: 500;
 }
 
 .nav {

@@ -26,6 +26,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - With the introduction of visual badges: re-added all missables to Leyndell.
 - Tooltip shadows and made the border more subtle. 
 - Styled the top-level notes to make them stand out.
+- Search bar added to the Resources sheet.
 - To-Do history log in the README file (for nostalgic purposes).
 
 ### Changed
