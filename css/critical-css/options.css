@@ -76,7 +76,6 @@ h2 {
 
 h3 {
   margin-block: 1.5rem 0.75rem;
-  font-size: 1.4rem;
 }
 
 a {
@@ -190,7 +189,7 @@ header {
 
 label {
   display: inline-block;
-  padding-block: 0.3rem;
+  padding-block: 0.3125rem;
 }
 
 select {
