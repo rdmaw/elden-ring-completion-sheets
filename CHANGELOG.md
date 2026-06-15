@@ -4,7 +4,7 @@ This document lists all notable changes to Elden Ring Cheat Sheets with each dep
 
 Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
-<!-- ## 2026-06-13
+<!-- ## 2026-06-16
 
 ### Fixed
 - Hide info button removing missables from the walkthrough and other pages where it shouldn't.
@@ -14,6 +14,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Searched word is now kept and filtered across reloads.
 - Slash shortcut now properly selects the current search words if there are any.
 - Slash shortcut now correctly goes to the search bar if a checkbox is focused.
+- Weird font hinting on Linux, resulting in distorted text, as well as many other font-related problems.
 
 ### Added
 - New DLC sections: Recluses' River, Abyssal Woods, Midra's Manse, and Jagged Peak.
@@ -32,6 +33,8 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Renamed "Spiral Incantations" to "Hornsent Incantations" on the Spells sheet.
 - Updated and pinned GoatCounter to the newest version.
 - Decreased border radius on all buttons. They should now look slightly less rounded.
+- Decreased the width of all content to reduce eye travel. I did this until I found the text comfortable to read.
+- Table of contents links are now blue to signal that they're clickable.
 
 ### Removed
 - Text like "Requires..." used for steps requiring Stonesword Keys and other prerequisites. These increase the length of sentences without adding much value. In-game you can tell by the Imp Seal how many keys are required, and the walkthrough is routed in a way that you shouldn't have to bother with counting or buying extras anyways. Steps that actually require an item have been given an additional step that collects these items beforehand instead of relying on a "Requires" text as a prerequisite. -->

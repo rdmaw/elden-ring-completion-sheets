@@ -24,7 +24,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 <h2>To-Do</h2>
 
-- [x] Church District `(Apr 30, 027492c)`
 - [x] Scaduview `(May 14, 17e1547)`
 - [x] Steam Guide Polish `(May 30, 79ff8f3)`
 - [x] Recluses' River `(June 4, b591907)`
@@ -32,6 +31,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Midra's Manse `(June 7, 564642e)`
 - [x] Jagged Peak `(June 8, af6bd48)`
 - [x] Styled badges `(June 9, ed43b56)`
+- [x] Website CSS redesign `(June 14, 9d290c9)`
 - [ ] Rauh Ruins
 - [ ] Enir-Ilim
 
@@ -144,5 +144,6 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
   - [x] East Scadu Altus `(Apr 13, e3f6804)`
   - [x] Stone Coffin Fissure `(Apr 25, 27e9a98)`
   - [x] Shadow Keep `(Apr 26, 331bd2f)`
+  - [x] Church District `(Apr 30, 027492c)`
 
 </details>
