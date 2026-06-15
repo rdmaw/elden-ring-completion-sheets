@@ -280,10 +280,10 @@ h2 span,
 
 .dlc {
   display: inline-block;
-  padding-left: 0.6em;
+  padding-left: 0.4375rem;
   font-size: 0.75rem;
   text-decoration: none;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 #search {
