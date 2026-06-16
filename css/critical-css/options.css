@@ -173,7 +173,7 @@ nav {
 }
 
 main {
-  width: min(100% - 9vi, 80ch);
+  width: min(100% - 9vi, 85ch);
   margin-inline: auto;
 }
 
