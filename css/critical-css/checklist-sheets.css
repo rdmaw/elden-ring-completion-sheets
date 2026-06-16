@@ -31,7 +31,7 @@
   --red: oklch(0.54 0.21 40);
 
   --note-text: oklch(from var(--nav) 0.2 0.1 h);
-  --note-bg: oklch(from var(--nav) 0.945 0.015 h);
+  --note-bg: oklch(from var(--nav) 0.96 0.015 h);
   --note-border: var(--nav);
 
   --badge: oklch(0.45 0.02 220);
@@ -276,6 +276,10 @@ h2 span,
 
 .done {
   background-color: var(--done);
+}
+
+.secondary {
+  font-weight: 400;
 }
 
 .dlc {
