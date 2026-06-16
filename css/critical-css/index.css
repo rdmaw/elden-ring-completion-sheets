@@ -107,7 +107,11 @@ h4 {
 
 p {
   position: relative;
-  margin: 0 0 1rem 0.625rem;
+  margin-bottom: 1rem;
+}
+
+h4, p {
+  margin-left: 0.5rem;
 }
 
 a {
@@ -146,7 +150,7 @@ ol {
 
 ol ul {
   list-style-type: circle;
-  margin-block: 0.25rem 0.75rem;
+  margin-block: 0.25rem 1rem;
 }
 
 strong {
