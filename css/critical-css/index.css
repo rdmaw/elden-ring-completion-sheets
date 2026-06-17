@@ -262,8 +262,8 @@ li ul {
 .badge {
   margin-right: 0.0625rem;
   padding: 0.125rem 0.1875rem;
-  color: var(--badge);
   background-color: oklch(from var(--background) l 0.003 220);
+  color: var(--badge);
   border: 1px solid var(--badge);
   border-radius: 4px;
   font-size: 0.875rem;
@@ -276,8 +276,8 @@ li ul {
 }
 
 .missable {
-  color: var(--red);
   background-color: oklch(from var(--background) l 0.05 40);
+  color: var(--red);
   border: 1px solid var(--red);
   cursor: pointer;
 }

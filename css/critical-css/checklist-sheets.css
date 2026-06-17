@@ -362,8 +362,8 @@ li {
 .note {
   margin: 0.5rem 0 0.5rem 0.1875rem;
   padding: 0.625rem 1.25rem;
-  color: var(--note-text);
   background-color: var(--note-bg);
+  color: var(--note-text);
   border-left: 7px solid var(--note-border);
   border-radius: 0 4px 4px 0;
 }
@@ -389,8 +389,8 @@ input[type=checkbox] {
 .badge {
   margin-right: 0.0625rem;
   padding: 0.125rem 0.1875rem;
-  color: var(--badge);
   background-color: oklch(from var(--background) l 0.003 220);
+  color: var(--badge);
   border: 1px solid var(--badge);
   border-radius: 4px;
   font-size: 0.875rem;
@@ -404,8 +404,8 @@ input[type=checkbox] {
 
 .missable,
 .missable .trophy {
-  color: var(--red);
   background-color: oklch(from var(--background) l 0.05 40);
+  color: var(--red);
   border: 1px solid var(--red);
 }
 
