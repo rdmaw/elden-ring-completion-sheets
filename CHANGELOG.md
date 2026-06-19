@@ -4,7 +4,7 @@ This document lists all notable changes to Elden Ring Cheat Sheets with each dep
 
 Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
-<!-- ## 2026-06-16
+<!-- ## 2026-06-19
 
 ### Fixed
 - Hide info button removing missables from the walkthrough and other pages where it shouldn't.
@@ -19,7 +19,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 ### Added
 - New DLC sections: Recluses' River, Abyssal Woods, Midra's Manse, and Jagged Peak.
 - Finished the following questlines: Igon, Florissax.
-- New missables: Companion Jar.
+- New missables: Companion Jar, Igon's Furled Finger, Igon's Drake Hunt, Priestess Heart, Flowerstone Gavel, Dragonbolt of Florissax, and Ancient Dragon Florissax.
 - Notes on the Questlines sheet regarding the Radahn Festival skip for each questline affected.
 - Count Ymir boss; was missing from the Bosses sheet.
 - New visual badges for missables, optional, and achievement steps.
@@ -27,6 +27,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Tooltip shadows and made the border more subtle. 
 - Styled the top-level notes to make them stand out.
 - Search bar added to the Resources sheet.
+- Hovering over the FAQ or Options links in the navigation bar now also shows a border.
 - To-Do history log in the README file (for nostalgic purposes).
 
 ### Changed
