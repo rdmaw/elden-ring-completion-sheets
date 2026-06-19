@@ -4,7 +4,7 @@ This document lists all notable changes to Elden Ring Cheat Sheets with each dep
 
 Dates follow the ISO 8601 standard (YYYY-MM-DD). 
 
-<!-- ## 2026-06-19
+## 2026-06-19
 
 ### Fixed
 - Hide info button removing missables from the walkthrough and other pages where it shouldn't.
@@ -21,12 +21,13 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Finished the following questlines: Igon, Florissax.
 - New missables: Companion Jar, Igon's Furled Finger, Igon's Drake Hunt, Priestess Heart, Flowerstone Gavel, Dragonbolt of Florissax, and Ancient Dragon Florissax.
 - Notes on the Questlines sheet regarding the Radahn Festival skip for each questline affected.
-- Count Ymir boss; was missing from the Bosses sheet.
+- Count Ymir boss; was missing from the Bosses sheet (now on route to end at 207 total bosses).
 - New visual badges for missables, optional, and achievement steps.
 - With the introduction of visual badges: re-added all missables to Leyndell.
-- Tooltip shadows and made the border more subtle. 
-- Styled the top-level notes to make them stand out.
+- Tooltips now have subtle shadows and border. 
+- Styled the top-level notes to make them stand out as actual notes.
 - Search bar added to the Resources sheet.
+- Search bar now stores your search results for each tab.
 - Hovering over the FAQ or Options links in the navigation bar now also shows a border.
 - To-Do history log in the README file (for nostalgic purposes).
 
@@ -34,12 +35,13 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Turned achievement notes into achievement steps.
 - Renamed "Spiral Incantations" to "Hornsent Incantations" on the Spells sheet.
 - Updated and pinned GoatCounter to the newest version.
-- Decreased border radius on all buttons. They should now look slightly less rounded.
-- Decreased the width of all content to reduce eye travel. I did this until I found the text comfortable to read.
-- Table of contents links are now blue to signal that they're clickable.
+- Decreased border radius on all buttons. Everything should now look slightly less rounded.
+- Decreased the width of all content to reduce eye travel. I did this until I found the text comfortable enough to read.
+- Table of contents links are now blue to indicate that they're clickable.
+- Updated steps with Ashes of Wars that are only obtained alongside some weapons. Changed their wording to clarify that they are made available for other weapons when removed, not obtained.
 
 ### Removed
-- Text like "Requires..." used for steps requiring Stonesword Keys and other prerequisites. These increase the length of sentences without adding much value. In-game you can tell by the Imp Seal how many keys are required, and the walkthrough is routed in a way that you shouldn't have to bother with counting or buying extras anyways. Steps that actually require an item have been given an additional step that collects these items beforehand instead of relying on a "Requires" text as a prerequisite. -->
+- Text like "Requires..." used for steps requiring Stonesword Keys and other prerequisites. These increase the length of sentences without adding much value. In-game you can tell by the Imp Seal how many keys are required, and the walkthrough is routed in a way that you shouldn't have to bother with counting or buying extras anyways. Steps that actually require an item have been given an additional step that collects these items beforehand instead of relying on a "Requires" text as a prerequisite.
 
 ## 2026-05-29
 
