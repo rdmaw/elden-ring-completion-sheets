@@ -1082,7 +1082,9 @@ window.addEventListener('pageshow', event => {
     setTheme(localStorage.getItem('theme') || 'system');
 
     if (hasCheckboxes) {
-        requestAnimationFrame(refreshCheckboxUI);
+        requestAnimationFrame(() => {
+            requestAnimationFrame(refreshCheckboxUI);
+        });
     }
 
     if (expandAllBtn) {
