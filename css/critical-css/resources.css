@@ -183,7 +183,7 @@ nav {
 
 .nav-list {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
   margin-left: auto;
 }
 
@@ -193,6 +193,7 @@ nav {
   gap: 0.1875rem;
   padding-inline: 0.5rem;
   color: var(--nav-text);
+  border: 2px solid transparent;
   line-height: 1;
 }
 
