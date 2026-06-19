@@ -10,6 +10,7 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Hide info button removing missables from the walkthrough and other pages where it shouldn't.
 - Added missing SOTE tags to the table of content sections on the Weapons, Ashes, and Spells sheets.
 - Added missing SOTE tags to every item in the DLC Cookbooks section on the Key Items sheet.
+- The To Top button no longer appears at the top when zoomed to or past 200%.
 - Blurry corners on borders and outlines.
 - Searched word is now kept and filtered across reloads.
 - Slash shortcut now properly selects the current search words if there are any.
