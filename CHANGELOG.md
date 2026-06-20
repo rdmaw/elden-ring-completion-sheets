@@ -18,6 +18,8 @@ Dates follow the ISO 8601 standard (YYYY-MM-DD).
 - Weird font hinting on Linux, resulting in distorted text, as well as many other font-related problems.
 
 ### Added
+- Replaced the Directions and Wise Beasts screenshots with higher-quality ones that show more of the area.
+- New group passwords screenshot in the Tutorial section.
 - New DLC sections: Recluses' River, Abyssal Woods, Midra's Manse, and Jagged Peak.
 - Finished the following questlines: Igon, Florissax.
 - New missables: Companion Jar, Igon's Furled Finger, Igon's Drake Hunt, Priestess Heart, Flowerstone Gavel, Dragonbolt of Florissax, and Ancient Dragon Florissax.
