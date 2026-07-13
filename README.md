@@ -1,5 +1,5 @@
 # Elden Ring Completion Sheets
-A checklist-based progression tracking tool to 100% complete Elden Ring. Visit the website at [eldenring.redmaw.dev](https://eldenring.redmaw.dev).
+A checklist-based website intended to help you 100% complete Elden Ring.
 
 See the [Changelog](CHANGELOG.md) for a list of notable changes with each update.
 

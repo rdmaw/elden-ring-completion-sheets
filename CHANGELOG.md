@@ -1,6 +1,6 @@
 # Changelog
 
-This document lists all notable changes to Elden Ring Completion Sheets with each deployment.
+This document lists all notable changes to [Elden Ring Completion Sheets](https://eldenring.redmaw.dev) with each deployment.
 
 Dates use the `YYYY-MM-DD` format.
 
