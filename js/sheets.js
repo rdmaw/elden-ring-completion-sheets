@@ -235,7 +235,7 @@ const profile = {
     }
 };
 
-/* OPTIONS.HTML
+/* SETTINGS.HTML
 --------------- */
 const dropdown = document.getElementById('profile');
 
