@@ -367,6 +367,11 @@ li {
   color: var(--note-text);
   border-left: 7px solid var(--note-border);
   border-radius: 0 4px 4px 0;
+  text-align: left;
+}
+
+#heads-up {
+  margin-left: 0;
 }
 
 label {
