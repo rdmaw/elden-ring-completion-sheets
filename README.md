@@ -1,5 +1,5 @@
-# Elden Ring Cheat Sheets
-A checklist-based progression tracking tool to 100% Elden Ring. Visit the project at [eldenring.redmaw.dev](https://eldenring.redmaw.dev).
+# Elden Ring Completion Sheets
+A checklist-based progression tracking tool to 100% complete Elden Ring. Visit the website at [eldenring.redmaw.dev](https://eldenring.redmaw.dev).
 
 See the [Changelog](CHANGELOG.md) for a list of notable changes with each update.
 
@@ -32,7 +32,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 - [x] Jagged Peak `(June 8, af6bd48)`
 - [x] Styled badges `(June 9, ed43b56)`
 - [x] Website CSS redesign `(June 14, 9d290c9)`
-- [ ] Rauh Ruins
+- [x] Rauh Ruins `(July 12, 699b9a1)`
 - [ ] Enir-Ilim
 
 <details>

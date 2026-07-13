@@ -1,8 +1,25 @@
 # Changelog
 
-This document lists all notable changes to Elden Ring Cheat Sheets with each deployment. If recent changes are not reflected on the website, try a hard refresh (CTRL + Shift + R) to force a fresh reload.
+This document lists all notable changes to Elden Ring Completion Sheets with each deployment.
 
-Dates follow the ISO 8601 standard (YYYY-MM-DD). 
+Dates use the `YYYY-MM-DD` format.
+
+## 2026-07-13
+
+### Added
+- New DLC sections: Rauh Ruins (It will go live either on July 14 or 15)
+- In the Walkthrough, Endings section: Specify the tab Miquella's Needle is in to avoid confusion. Add that the following steps assume that the Frenzied Flame ending is picked first, and then tamed.
+
+### Changed
+- Updated pages' titles and branding. This was done to clarify that the website is written for Elden Ring, avoiding future confusion when I copy the structure for other souls games. The intention is also to separate the site from the classic "cheat sheet" websites and its forks to not conflict with those in recognition when it comes to having almost identical names.
+- Updated all pages' descriptions to account for the title change.
+- In the Walkthrough, Endings section: Update wording to "Copy save file" from "Backup", with the intention to sound a bit less technical.
+- Updated the Heads up! on the Merchants sheet to have note styling.
+- Various wording updates in several places on the Walkthrough sheet.
+
+### Removed
+- Removed the Legendary Ashen Remains achievement note, as this info is now inside a same-sentence trophy badge.
+- Removed a random Demi-Human loot step from First Steps in Limgrave due to being an inconsistent drop (#11).
 
 ## 2026-06-19
 
