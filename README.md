@@ -37,7 +37,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 <details>
   <summary><h2>To-Do History</h2></summary>
-  
+
   ### 2025
 
   - [x] Tutorial `(Jan 10, 8149fb2)`

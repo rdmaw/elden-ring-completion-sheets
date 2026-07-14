@@ -44,7 +44,7 @@ Dates use the `YYYY-MM-DD` format.
 - Count Ymir boss; was missing from the Bosses sheet (now on route to end at 207 total bosses).
 - New visual badges for missables, optional, and achievement steps.
 - With the introduction of visual badges: re-added all missables to Leyndell.
-- Tooltips now have subtle shadows and border. 
+- Tooltips now have subtle shadows and border.
 - Styled the top-level notes to make them stand out as actual notes.
 - Search bar added to the Resources sheet.
 - Search bar now stores your search results for each tab.
@@ -72,8 +72,8 @@ Dates use the `YYYY-MM-DD` format.
 - New DLC section: Scaduview.
 - Finished Ymir's and Jolan's questlines.
 - Finished Ymir's merchant inventory.
-- Metyr's Remembrance and remembrance items to both Resources and NG+ sheets. 
-- Remaining duplication coffins to the NG+ sheet. 
+- Metyr's Remembrance and remembrance items to both Resources and NG+ sheets.
+- Remaining duplication coffins to the NG+ sheet.
 - Added Key Items and Misc Items sections to the Steam Guide, alongside many adjustments and refinements.
 
 ### Changed
