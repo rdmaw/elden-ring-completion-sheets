@@ -2,14 +2,16 @@ _headers
 .assetsignore
 .wrangler
 wrangler.jsonc
-app
 fonts
+icons
 images
 *.jpg
 goatcounter.*.js
 sheets.*.js
 sheets.*.css
 404.*
+sheets.webmanifest
+service-worker.js
 apple-touch-icon.png
 favicon.*
 robots.txt
