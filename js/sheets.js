@@ -270,7 +270,9 @@ if (dropdown) {
 
     createBtn.addEventListener('click', () => {
         const name = prompt('Enter a name for the profile:')?.trim();
-        if (!name) return;
+        if (!name) {
+            return
+        };
 
         const result = profile.create(name);
         if (!result.success) {
@@ -305,7 +307,9 @@ if (dropdown) {
         const currentProfile = dropdown.value;
         const profileName = currentProfile === DEFAULT_PROFILE ? 'the default profile' : currentProfile;
 
-        if (!confirm(`Reset progress for ${profileName} in Walkthrough, DLC-Walkthrough, NPC-Walkthrough, Questlines, Bosses, and New Game Plus? Progress on other sheets will not be affected.`)) return;
+        if (!confirm(`Reset progress for ${profileName} in Walkthrough, DLC-Walkthrough, NPC-Walkthrough, Questlines, Bosses, and New Game Plus? Progress on other sheets will not be affected.`)) {
+            return;
+        }
 
         const result = profile.resetToNGPlus(currentProfile);
         if (!result.success) {
@@ -319,7 +323,9 @@ if (dropdown) {
         const isProfileDefault = currentProfile === DEFAULT_PROFILE;
         const action = isProfileDefault ? 'reset all progress for the default profile' : `delete ${currentProfile}`;
 
-        if (!confirm(`Are you sure you want to ${action}?`)) return;
+        if (!confirm(`Are you sure you want to ${action}?`)) {
+            return;
+        }
 
         const result = profile.delete(currentProfile);
         if (!result.success) {
@@ -364,7 +370,9 @@ if (dropdown) {
         try {
             const parsed = JSON.parse(data);
 
-            if (!confirm('Importing a new profile will overwrite all current data.')) return;
+            if (!confirm('Importing a new profile will overwrite all current data.')) {
+                return;
+            }
 
             const result = profile.importAll(parsed);
             if (result.success) {
@@ -381,7 +389,9 @@ if (dropdown) {
 
     fileInput.addEventListener('change', async event => {
         const file = event.target.files[0];
-        if (!file) return;
+        if (!file) {
+            return;
+        }
 
         try {
             const text = await file.text();
@@ -484,13 +494,14 @@ function calculateChecklistProgress(checkboxes) {
             progress.done = progress.checked === progress.total && progress.total > 0;
         }
     }
-
     return checklistProgress;
 }
 
 function getProgressId(id) {
     const hyphenIndex = id.indexOf('-');
-    if (hyphenIndex === -1) return '';
+    if (hyphenIndex === -1) {
+        return '';
+    }
 
     const checklistId = id.substring(hyphenIndex + 1);
     if (checklistId.length < 2 || (checklistId[0] !== 'c' && checklistId[0] !== 'n')) {
@@ -524,7 +535,9 @@ function updateProgress(checklistProgress, progressBtns, navSpans) {
 }
 
 function updateCurrentProgress(checklistProgress, totalSpan) {
-    if (!totalSpan) return;
+    if (!totalSpan) {
+        return;
+    }
 
     let checked = 0;
     let total = 0;
@@ -764,7 +777,9 @@ if (searchInput) {
 
     function filter(query) {
         const search = query.toLowerCase().trim();
-        if (search === lastSearch) return;
+        if (search === lastSearch) {
+            return;
+        }
         lastSearch = search;
 
         const queries = search.split(/\s+/).filter(Boolean);
@@ -837,7 +852,9 @@ function openSidebar() {
 }
 
 function closeSidebar() {
-    if (sidebar.ariaHidden === 'true') return;
+    if (sidebar.ariaHidden === 'true') {
+        return;
+    }
 
     const focusingSidebar = sidebar.contains(document.activeElement);
     if (focusingSidebar) {
@@ -890,7 +907,9 @@ function announce(text) {
 }
 
 function focusSearch() {
-    if (!searchInput) return;
+    if (!searchInput) {
+        return;
+    }
 
     searchInput.focus();
     searchInput.select();
@@ -898,14 +917,18 @@ function focusSearch() {
 }
 
 function hideSteps() {
-    if (!hideBtn) return;
+    if (!hideBtn) {
+        return;
+    }
 
     hideBtn.click();
     announce(root.classList.contains('hide-checked') ? 'Hiding checked steps' : 'Showing checked steps');
 }
 
 function scrollTop() {
-    if (!upBtn) return;
+    if (!upBtn) {
+        return;
+    }
 
     window.scrollTo({ top: 0 });
     menuBtn.focus();
@@ -921,10 +944,14 @@ const shortcuts = {
 }
 
 document.addEventListener('keydown', event => {
-    if (document.activeElement === searchInput) return;
+    if (document.activeElement === searchInput) {
+        return;
+    }
 
     const action = shortcuts[event.key.toLowerCase()];
-    if (!action || event.ctrlKey || event.metaKey) return;
+    if (!action || event.ctrlKey || event.metaKey) {
+        return;
+    }
 
     event.preventDefault();
     action();
@@ -979,7 +1006,6 @@ window.addEventListener('storage', event => {
         if (themeSelect) {
             themeSelect.value = event.newValue || 'system';
         }
-
         return;
     }
 
@@ -995,7 +1021,6 @@ window.addEventListener('storage', event => {
         if (hideBtn) {
             hideBtn.ariaPressed = String(isHidden);
         }
-
         return;
     }
 
@@ -1014,7 +1039,6 @@ window.addEventListener('storage', event => {
         } catch (error) {
             console.error('Error syncing profile:', error);
         }
-
         return;
     }
 
@@ -1036,7 +1060,6 @@ window.addEventListener('storage', event => {
         } catch (error) {
             console.error('Error syncing profile:', error);
         }
-
         return;
     }
 });
@@ -1073,7 +1096,9 @@ document.addEventListener('click', event => {
 /* BACK/FORWARD CACHE
 --------------------- */
 window.addEventListener('pageshow', event => {
-    if (!event.persisted) return;
+    if (!event.persisted) {
+        return;
+    }
 
     activeProfile = localStorage.getItem('active-profile') || DEFAULT_PROFILE;
     profiles = loadProfiles();
@@ -1095,3 +1120,14 @@ window.addEventListener('pageshow', event => {
         updateCompactUI(localStorage.getItem('compact-checklists') === 'true');
     }
 });
+
+/* REGISTER WORKER
+------------------ */
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .catch((error) => {
+                console.error('Failed to register Service Worker:', error);
+            });
+    });
+}
