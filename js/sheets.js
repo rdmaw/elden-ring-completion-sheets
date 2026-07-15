@@ -75,7 +75,6 @@ const profile = {
                 profiles[activeProfile].collapsed[id] = 1;
                 continue;
             }
-
             delete profiles[activeProfile].collapsed[id];
         }
         this.saveToStorage();
@@ -111,7 +110,6 @@ const profile = {
 
         profiles[name] = { checked: {}, collapsed: {} };
         activeProfile = name;
-
         this.saveToStorage();
         localStorage.setItem('active-profile', name);
 
@@ -127,14 +125,12 @@ const profile = {
                 error: 'Name unchanged, because no new name was provided.'
             };
         }
-
         if (newName.toLowerCase() === 'default') {
             return {
                 success: false,
                 error: `Can't use default as the profile name.`
             };
         }
-
         if (profiles[newName]) {
             return {
                 success: false,
@@ -145,7 +141,6 @@ const profile = {
         profiles[newName] = profiles[oldName];
         delete profiles[oldName];
         activeProfile = newName;
-
         this.saveToStorage();
         localStorage.setItem('active-profile', newName);
 
@@ -194,7 +189,6 @@ const profile = {
 
         delete profiles[name];
         activeProfile = DEFAULT_PROFILE;
-
         this.saveToStorage();
         localStorage.removeItem('active-profile');
 
@@ -254,7 +248,6 @@ function refreshDropdown(dropdown, activeProfile) {
 
 if (dropdown) {
     refreshDropdown(dropdown, activeProfile);
-
     const createBtn = document.getElementById('create');
     const editBtn = document.getElementById('edit');
     const newGamePlusBtn = document.getElementById('new-game-plus');
@@ -286,7 +279,6 @@ if (dropdown) {
 
     editBtn.addEventListener('click', () => {
         const currentProfile = dropdown.value;
-
         if (currentProfile === DEFAULT_PROFILE) {
             alert(`Can't edit the default profile.`);
             return;
@@ -299,7 +291,6 @@ if (dropdown) {
             alert(result.error);
             return;
         }
-
         refreshDropdown(dropdown, activeProfile);
     });
 
@@ -400,7 +391,6 @@ if (dropdown) {
             alert('Invalid profile data.');
             console.error(error);
         }
-
         fileInput.value = '';
     });
 
@@ -441,7 +431,6 @@ function buildCheckboxMap() {
     for (let i = 0; i < checkboxesLen; i++) {
         checkboxMap.set(checkboxes[i], checkboxes[i].parentElement);
     }
-
     return true;
 }
 
@@ -473,7 +462,9 @@ function calculateChecklistProgress(checkboxes) {
         const checkboxId = checkbox.id;
 
         const hyphenIndex = checkboxId.indexOf('-', idStart);
-        if (hyphenIndex === -1) continue;
+        if (hyphenIndex === -1) {
+            continue;
+        }
 
         const checklistId = checkboxId.substring(idStart, hyphenIndex);
         if (!checklistProgress[checklistId]) {
@@ -482,7 +473,6 @@ function calculateChecklistProgress(checkboxes) {
 
         const progress = checklistProgress[checklistId];
         progress.total++;
-
         if (checkbox.checked) {
             progress.checked++;
         }
@@ -507,7 +497,6 @@ function getProgressId(id) {
     if (checklistId.length < 2 || (checklistId[0] !== 'c' && checklistId[0] !== 'n')) {
         return '';
     }
-
     return checklistId.substring(1);
 }
 
@@ -517,7 +506,9 @@ function updateProgress(checklistProgress, progressBtns, navSpans) {
     for (let i = 0; i < progressBtnsLen; i++) {
         const progressBtn = progressBtns[i];
         const checklistId = getProgressId(progressBtn.id);
-        if (!checklistId) continue;
+        if (!checklistId) {
+            continue;
+        }
 
         const progress = checklistProgress[checklistId] || { checked: 0, total: 0, done: false };
         const text = progress.total ? (progress.done ? 'DONE' : `${progress.checked}/${progress.total}`) : '0/0';
@@ -564,7 +555,6 @@ function updateChecklistProgress() {
     if (!cachedProgress) {
         const prefix = sheetPrefix;
         const totalSpan = document.getElementById(`${prefix}-sheet`);
-
         if (!totalSpan) {
             console.error(`Current Progress span with prefix "${prefix}" could not be found`);
             return;
@@ -604,7 +594,9 @@ if (hasCheckboxes) {
         for (let i = 0; i < checkboxesLen; i++) {
             const checkbox = checkboxes[i];
             const hyphenIndex = checkbox.id.indexOf('-', 1);
-            if (hyphenIndex === -1) continue;
+            if (hyphenIndex === -1) {
+                continue;
+            }
 
             const checklist = checkbox.id.substring(1, hyphenIndex);
             if (checklist === checklistId && checkbox.checked !== checked) {
@@ -612,7 +604,6 @@ if (hasCheckboxes) {
                 profile.setChecked(checkbox.id, checked);
             }
         }
-
         updateChecklistProgress();
     }
 
@@ -626,7 +617,6 @@ if (hasCheckboxes) {
     document.addEventListener('change', event => {
         if (event.target.matches('input[type="checkbox"]')) {
             const checkbox = event.target;
-
             setCheckboxState(checkbox, checkbox.checked);
             profile.setChecked(checkbox.id, checkbox.checked);
             updateChecklistProgress();
@@ -658,7 +648,9 @@ function setupCollapseUI() {
     for (const btn of collapseBtns) {
         const checklistId = btn.getAttribute('aria-controls');
         const checklist = document.getElementById(checklistId);
-        if (!checklist) continue;
+        if (!checklist) {
+            continue;
+        }
 
         const isCollapsed = !!profiles[activeProfile].collapsed[checklistId];
         setCollapseState(btn, checklist, !isCollapsed);
@@ -689,7 +681,6 @@ function setAllChecklists(expanded) {
         const checklistId = btn.getAttribute('aria-controls');
         updates.push({ id: checklistId, expanded });
     }
-
     profile.setCollapsedBatch(updates);
 }
 
@@ -732,7 +723,6 @@ if (compactBtn) {
 /* HIDE CHECKED STEPS
 --------------------- */
 const hideBtn = document.getElementById('hide-btn');
-
 localStorage.removeItem('hide-checked');
 
 if (hideBtn) {
@@ -740,7 +730,6 @@ if (hideBtn) {
 
     hideBtn.addEventListener('click', () => {
         const isHidden = !root.classList.contains('hide-checked');
-
         root.classList.toggle('hide-checked', isHidden);
         hideBtn.ariaPressed = String(isHidden);
         localStorage.setItem('hide-checked', String(isHidden));
@@ -753,7 +742,6 @@ const searchInput = document.getElementById('search');
 
 if (searchInput) {
     const headers = Array.from(document.querySelectorAll('main h3'));
-
     const cachedSections = headers.map(header => {
         const checklist = header.nextElementSibling;
         const steps = Array.from(checklist.children);
@@ -884,7 +872,6 @@ const scroll = document.getElementById('scroll-sentinel');
 if (upBtn && scroll) {
     const observer = new IntersectionObserver(([entry]) => {
         const show = !entry.isIntersecting;
-
         upBtn.classList.toggle('show', show);
         upBtn.tabIndex = show ? 0 : -1;
     }, { rootMargin: '100% 0px 0px 0px' });
@@ -968,7 +955,6 @@ function setTheme(theme) {
         root.setAttribute('data-theme', 'light');
         return;
     }
-
     if (theme === 'dark') {
         root.setAttribute('data-theme', 'dark');
         return;
@@ -1032,7 +1018,6 @@ window.addEventListener('storage', event => {
             if (hasCheckboxes) {
                 refreshCheckboxUI();
             }
-
             if (expandAllBtn) {
                 setupCollapseUI();
             }
@@ -1049,11 +1034,9 @@ window.addEventListener('storage', event => {
             if (dropdown) {
                 refreshDropdown(dropdown, activeProfile);
             }
-
             if (hasCheckboxes) {
                 refreshCheckboxUI();
             }
-
             if (expandAllBtn) {
                 setupCollapseUI();
             }
@@ -1103,7 +1086,6 @@ window.addEventListener('pageshow', event => {
     activeProfile = localStorage.getItem('active-profile') || DEFAULT_PROFILE;
     profiles = loadProfiles();
     ensureProfileExists();
-
     setTheme(localStorage.getItem('theme') || 'system');
 
     if (hasCheckboxes) {
@@ -1111,11 +1093,9 @@ window.addEventListener('pageshow', event => {
             requestAnimationFrame(refreshCheckboxUI);
         });
     }
-
     if (expandAllBtn) {
         setupCollapseUI();
     }
-
     if (compactBtn) {
         updateCompactUI(localStorage.getItem('compact-checklists') === 'true');
     }
@@ -1123,9 +1103,23 @@ window.addEventListener('pageshow', event => {
 
 /* REGISTER WORKER
 ------------------ */
+let serviceWorkerUrl = '/service-worker.js';
+
+if (typeof trustedTypes !== 'undefined') {
+    const swPolicy = trustedTypes.createPolicy('service-worker', {
+        createScriptURL: (url) => {
+            if (url === '/service-worker.js') {
+                return url;
+            }
+            throw new TypeError('Blocked Service Worker URL: ' + url);
+        }
+    });
+    serviceWorkerUrl = swPolicy.createScriptURL(serviceWorkerUrl);
+}
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register(serviceWorkerUrl)
             .catch((error) => {
                 console.error('Failed to register Service Worker:', error);
             });
