@@ -7,7 +7,6 @@ Dates use the `YYYY-MM-DD` format.
 ## 2026-07-13
 
 ### Added
-- New DLC sections: Rauh Ruins (It will go live either on July 14 or 15)
 - In the Walkthrough, Endings section: Specify the tab Miquella's Needle is in to avoid confusion. Add that the following steps assume that the Frenzied Flame ending is picked first, and then tamed.
 
 ### Changed
