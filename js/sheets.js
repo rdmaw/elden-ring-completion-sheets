@@ -66,7 +66,7 @@ const profile = {
         this.saveToStorage();
     },
 
-    // Batch collapse/expand updates. Chrome may drop spammy localStorage writes (fixes #8).
+    // Batch collapse/expand updates, otherwise Chrome may drop them (#8)
     setCollapsedBatch(updates) {
         const updatesLen = updates.length;
 
@@ -671,7 +671,7 @@ function setupCollapseUI() {
         }
     }
     collapseInitialized = true;
-    document.getElementById('fouc')?.remove(); // Clean up style tag injected by inline script.
+    document.getElementById('fouc')?.remove(); // Clean up style tag injected by inline script
 }
 
 function setAllChecklists(expanded) {
