@@ -4,6 +4,21 @@ This document lists all notable changes to [Elden Ring Completion Sheets](https:
 
 Dates use the `YYYY-MM-DD` format.
 
+## 2026-09-18
+
+### Fixes
+
+- Fixed an issue that caused a file on the website to be fetched twice, causing a cross-world mismatch.
+
+### Features
+
+- Added a few extra steps to the NG+ preparation section that cover planning which NPC routes to go with.
+- I've started recording videos to cover non-respawning crafting materials. Four are already out and can be found here: https://www.youtube.com/playlist?list=PLY7cqXymuwu0.
+
+### Changes
+
+- The Tutorial section is now called "Starting Out". There will be more changes to this section, but I've decided to work on the crafting materials videos before finalizing the Walkthrough sections.
+
 ## 2026-09-07
 
 ### Fixes
