@@ -743,14 +743,15 @@ if (hideBtn) {
 const searchInput = document.getElementById('search');
 
 if (searchInput) {
-    const headers = Array.from(document.querySelectorAll('main h3'));
-    const cachedSections = headers.map(header => {
+    const sections = Array.from(document.querySelectorAll('main section'));
+    const cachedSections = sections.map(section => {
+        const header = section.firstElementChild;
         const checklist = header.nextElementSibling;
         const steps = Array.from(checklist.children);
         const headerText = header.textContent.toLowerCase();
         const stepTexts = steps.map(step => step.textContent.toLowerCase());
 
-        return { header, checklist, steps, headerText, stepTexts };
+        return { section, steps, headerText, stepTexts };
     });
 
     let lastSearch = null;
@@ -777,15 +778,14 @@ if (searchInput) {
         const cachedSectionsLen = cachedSections.length;
 
         for (let i = 0; i < cachedSectionsLen; i++) {
-            const { header, checklist, steps, headerText, stepTexts } = cachedSections[i];
+            const { section, steps, headerText, stepTexts } = cachedSections[i];
             const sectionMatches = searching && matchesQuery(headerText, queries);
 
             let hasVisibleStep = false;
             const stepsLen = steps.length;
 
             if (sectionMatches) {
-                setDisplayProperty(header, '');
-                setDisplayProperty(checklist, '');
+                setDisplayProperty(section, '');
 
                 for (let j = 0; j < stepsLen; j++) {
                     setDisplayProperty(steps[j], '');
@@ -802,8 +802,7 @@ if (searchInput) {
                     }
                 }
             }
-            setDisplayProperty(header, hasVisibleStep ? '' : 'none');
-            setDisplayProperty(checklist, hasVisibleStep ? '' : 'none');
+            setDisplayProperty(section, hasVisibleStep ? '' : 'none');
         }
     }
 
