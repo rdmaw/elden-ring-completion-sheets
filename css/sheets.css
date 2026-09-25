@@ -194,11 +194,11 @@ footer {
   text-align: center;
 }
 
-footer a {
+#contact-link {
   color: var(--text);
 }
 
-footer a:active {
+#contact-link:active {
   color: var(--link);
 }
 
@@ -297,7 +297,7 @@ footer a:active {
     background-color: var(--sidebar-hover);
   }
 
-  footer a:hover {
+  #contact-link:hover {
     color: var(--link);
   }
 }
