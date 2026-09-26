@@ -4,6 +4,27 @@ This document lists all notable changes to [Elden Ring Completion Sheets](https:
 
 Dates use the `YYYY-MM-DD` format.
 
+## 2026-09-26
+
+### Fixes
+
+- Fixed grammar on missables from Melina's and Fia's questlines.
+
+### Features
+
+- Added four new steps (with more to come) for collecting all non-respawning crafting materials.
+- Added the remaining missing links for items from the Tarnished Pack DLC that weren't on the wiki.
+- Added a support section to the FAQ. There's also a link to it in the footer.
+
+### Changes
+
+- Some slight internal code changes. The search bar might be slightly faster.
+- Rephrase the note below Alexander's step in the NG prep section to be more specific.
+
+### Removals
+
+- Removed the Walkthrough and DLC-Walkthrough notes regarding Tarnished Pack content now that the DLC has been out for a month.
+
 ## 2026-09-18
 
 ### Fixes
