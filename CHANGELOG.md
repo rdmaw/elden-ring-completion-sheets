@@ -4,6 +4,12 @@ This document lists all notable changes to [Elden Ring Completion Sheets](https:
 
 Dates use the `YYYY-MM-DD` format.
 
+## 2026-10-29
+
+### Features
+
+- Added new video showing crafting materials in Siofra and Nokron.
+
 ## 2026-09-26
 
 ### Fixes
