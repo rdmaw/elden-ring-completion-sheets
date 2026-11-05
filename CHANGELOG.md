@@ -4,11 +4,16 @@ This document lists all notable changes to [Elden Ring Completion Sheets](https:
 
 Dates use the `YYYY-MM-DD` format.
 
-## 2026-10-29
+## 2026-11-05
+
+### Fixes
+
+- Removed Optional badge from the first step of Yura's questline.
 
 ### Features
 
-- Added new video showing crafting materials in Siofra and Nokron.
+- Added new video showing non-respawning crafting materials in Siofra and Nokron.
+- Added new video showing non-respawning crafting materials in Deeproot Depths.
 
 ## 2026-09-26
 
