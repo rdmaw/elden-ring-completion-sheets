@@ -28,6 +28,13 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
 
 - [x] Update DLC Walkthrough with patch 1.17 changed items `(Aug 30, 9b23375)`
 - [ ] Film videos for all rare crafting material locations
+  - [x] Limgrave
+  - [x] Weeping Peninsula
+  - [x] Liurnia
+  - [x] Caelid
+  - [x] Siofra River
+  - [x] Deeproot Depths
+  - [ ] Ainsel River
 - [ ] Rewrite the Walkthrough to its final version
 - [ ] Rewrite the DLC Walkthrough to its final version
 - [ ] Rewrite the NPC Walkthrough to its final version
