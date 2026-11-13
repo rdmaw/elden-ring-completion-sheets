@@ -34,7 +34,10 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
   - [x] Caelid
   - [x] Siofra River
   - [x] Deeproot Depths
-  - [ ] Ainsel River
+  - [x] Ainsel River
+  - [ ] Altus Plateau
+  - [ ] Mt. Gelmir
+  - [ ] Leyndell
 - [ ] Rewrite the Walkthrough to its final version
 - [ ] Rewrite the DLC Walkthrough to its final version
 - [ ] Rewrite the NPC Walkthrough to its final version
