@@ -35,7 +35,7 @@ Please open an issue or leave a comment on the [Steam Guide](https://steamcommun
   - [x] Siofra River
   - [x] Deeproot Depths
   - [x] Ainsel River
-  - [ ] Altus Plateau
+  - [x] Altus Plateau
   - [ ] Mt. Gelmir
   - [ ] Leyndell
 - [ ] Rewrite the Walkthrough to its final version
