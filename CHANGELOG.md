@@ -4,6 +4,19 @@ This document lists all notable changes to [Elden Ring Completion Sheets](https:
 
 Dates use the `YYYY-MM-DD` format.
 
+## 2026-11-22
+
+### Fixes
+
+- Fixed the Madding Hand (NPC) link going to the Madding Hand weapon page due to a September wiki page rename.
+- Corrected various minor typos across the sheets.
+
+### Features
+
+- Added new video showing non-respawning crafting materials in Ainsel River, Nokstella, and Lake of Rot.
+- Added new video showing non-respawning crafting materials in Altus Plateau.
+- Added "(now)" and "(later)" to the Hornsent, Leda, and Ansbach invasions note for clarity.
+
 ## 2026-11-05
 
 ### Fixes
